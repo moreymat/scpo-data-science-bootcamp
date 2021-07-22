@@ -7,9 +7,9 @@ Data science bootcamp at Sciences Po
 (Sylvain) Le Monde article on brands against NOVA or Nutri-Score
 Load OpenFoodFacts, groupby product categories, plot NOVA scores for brands => coincidence? we think not
 
-Day 1 : use Python, load OFF
-Day 2 : analysis and plots
-Day 3 : advanced analysis, functions ; recompute NOVA or NutriScore => alternate scores
+- Day 1 : use Python, load OFF
+- Day 2 : analysis and plots
+- Day 3 : advanced analysis, functions ; recompute NOVA or NutriScore => alternate scores
 
 ### Sequence 1.1
 Goals :
