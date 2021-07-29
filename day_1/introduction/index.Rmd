@@ -1,0 +1,260 @@
+---
+title: "Data Science Bootcamp"
+subtitle: "Day 1 : let's Python"
+author: "Mathieu Morey & Sylvain Lapoix<br>Datactivist"
+date: "August, 23rd 2021"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+params:
+  event: Data Science Bootcamp
+  slug: scpo-data-science-bootcamp
+  session: day_1
+  module: introduction
+  image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
+  image_alt: Datactivist logo
+---
+
+```{r, echo=FALSE}
+library(metathis)
+meta() %>% 
+  meta_description(params$event) %>% 
+  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = params$title,
+    url = paste0("https://datactivist.coop/", params$slug),
+    image = params$image,
+    image_alt = params$image_alt,
+    og_type = "website",
+    og_author = "Datactivist",
+    og_locale = "fr_FR",
+    og_site_name = "Datactivist",
+    twitter_card_type = "summary",
+    twitter_creator = "@datactivi_st")
+
+```
+
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href='https://datactivist.coop/'><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")` 
+
+
+---
+
+class: center, middle
+
+This presentation is available at : `r paste0("http://datactivist.coop/", params$slug, "/", params$session, "/", params$module)`
+
+Sources : `r paste0("https://github.com/datactivist/", params$slug, "/", params$session, "/", params$module)`
+
+
+All Datactivist productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+
+<BR>
+<BR>
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+---
+
+# Disclaimer : my moto
+
+> There are no silly questions.
+
+--
+
+> There's only awkward silences.
+
+
+---
+
+background-image: url(https://media.giphy.com/media/d1E1kn94NNfrlPGw/source.gif)
+class: inverse, center, top
+
+
+# What is this class ?
+
+---
+
+### The bootcamp
+
+* What's the principle ?
+* What's the tool ?
+* What's the timetable ?
+
+
+---
+
+### The objectives
+
+* understanding what's Python ;
+* understanding what's a notebook and learning how to use it ;
+* understanding what's data science ;
+* learning how to perform basic data exploration ;
+* learning how to answer questions with a dataset.
+
+---
+
+### presentation of the teachers
+
+.pull-left[**Matthew Morey**
+
+]
+
+.pull-right[**Sullivan Lapoix**
+
+]
+
+---
+
+## What is .red[Datactivist] ?
+
+.center[[![:largeur 80%](https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png)](https://datactivist.coop)]
+
+### We .red[open data], we make them .red[useful]
+
+---
+
+background-image: url(https://media.giphy.com/media/3o6gaYez5IKFNoLbI4/source.gif)
+class: inverse, center, top
+
+
+## And ... who are you ?
+
+
+
+---
+
+background-image: url(https://media.giphy.com/media/yRXF8FAW2Bhv2/source.gif)
+class: inverse, center, top
+
+
+# What is this class going to be about ?
+
+---
+
+### Nutrition data : a topic
+
+---
+
+### The many sources of data
+
+
+---
+
+### OpenFoodFacts : the "Wikipedia of food and beverages"
+
+---
+
+### The demand for new metrics on food
+
+---
+
+### Nutrition score : the Nutri-score
+
+
+---
+
+### Nutrition score : the Nova Score
+
+---
+
+### Brands vs Nutri-score : a food fight
+
+---
+
+### Terms of the controversy
+
+---
+
+background-image: url(https://media.giphy.com/media/8nhgZZMKUicpi/source.gif)
+
+class: inverse, center, top
+
+### How can data science help us understand this debate ?
+
+---
+
+### This way for example ?
+
+here are small multiple graphs documenting the distribution of the brands' products as documented by OpenFoodFacts regarding NOVA and/or Nutri-Score (barchart ? Scatter plot x=NOVA, y=Nutri ?) ;
+---
+
+
+### Here is what we did
+
+1. reading / tidying / understanding OFF database => loading the data ;
+2. groupby brands / select NOVA and Nutri variable / plot => analyzing the data ;
+3. arranging it in a comprehensive way => understanding the data.
+
+---
+
+background-image: url(https://media.giphy.com/media/l3JDl9o3I5rY0ZQKQ/giphy.gif)
+class: inverse, center, top
+
+### And it happens to be our program !
+
+---
+
+background-image: url(https://media.giphy.com/media/JUqTbMDv31Eim4WYXe/giphy.gif)
+class: inverse, center, top
+
+
+## So what is the program of this class again ?
+
+
+---
+
+### Here is the programm
+
+- Day 1 : use Python, load OFF
+- Day 2 : analysis and plots
+- Day 3 : advanced analysis, functions ; recompute NOVA or NutriScore => alternate scores
+
+---
+
+### Evaluation
+
+---
+class: inverse, center, middle
+
+# Questions ?
+
+Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) & [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & 
+
+

@@ -7,26 +7,7 @@ Data science bootcamp at Sciences Po
 
 * **lead** : Sylvain ;
 * **format** : Xaringan ;
-* **presentation** : [link]()
-
-Program :
-
-1. presentation of the teachers ;
-2. presentation of the class ;
-3. presentation of the objectives ;
-4. presentation fo the topic : nutrition and open data documentation of food and beverages ;
-5. introduction : nutrition score (Nutri-Score, NOVA, etc.) ;
-6. case study : brands' opposition to NOVA and Nutri-Score ;
-7. dramatic pause : how could we use open data to document how those brands' products perform ?
-8. twist : here are small multiple graphs documenting the distribution of the brands' products as documented by OpenFoodFacts regarding NOVA and/or Nutri-Score (barchart ? Scatter plot x=NOVA, y=Nutri ?) ;
-9. reveal : what did we do here ?
-    1. reading / tidying / understanding OFF database => loading the data ;
-    2. groupby brands / select NOVA and Nutri variable / plot => analyzing the data ;
-    3. arranging it in a comprehensive way => understanding the data.
-10. and this will be our 3 day program (what are the odds ?).
-    - Day 1 : use Python, load OFF
-    - Day 2 : analysis and plots
-    - Day 3 : advanced analysis, functions ; recompute NOVA or NutriScore => alternate scores
+* **presentation** : [link](https://datactivist.coop/scpo-data-science-bootcamp/day_1/introduction)
 
 ### Sequence 1.1
 Goals :
