@@ -130,15 +130,26 @@ class: inverse, center, top
 
 ---
 
-### presentation of the teachers
+### The teachers
 
-.pull-left[**Matthew Morey**
+.pull-left[
+.center[
+**Mathieu Morey**
 
-]
+![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/images/mathieu_hex.png)
 
-.pull-right[**Sullivan Lapoix**
+]]
 
-]
+.pull-right[
+.center[
+**Sylvain Lapoix**
+
+![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/images/sylvain_hex.png)
+
+datajournalist and consultant at .red[Datactivist], he works with civil society and public actors on data literacy, data analysis & open data.
+
+He uses R on a daily basis and is Mathieu's padawan in Python.
+]]
 
 ---
 
@@ -168,37 +179,159 @@ class: inverse, center, top
 
 ---
 
-### Nutrition data : a topic
+### Nutrition information
 
----
+Nutrition information is a highly controversial and regulated topic in Europe and in the US.
 
-### The many sources of data
+Dating back to 1979, EU regulation on food labelling was initially designed as a tool for the free circulation of food products and beverages in the European community ([Directive 79/112/EEC](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31979L0112)).
 
+Mandatory labelling in the US was introduced in the 1960's, with the rise of prepared meals, listing the ingredients. But it's only in 1990 the USDA passed the obligation of displaying *"consistent claims"* about **nutritious facts**.
 
----
+Later, demand for further details emerged. Food labelling came at the intersection of two highly political topics :
 
-### OpenFoodFacts : the "Wikipedia of food and beverages"
-
----
-
-### The demand for new metrics on food
-
----
-
-### Nutrition score : the Nutri-score
+1. health ;
+2. public information.
 
 
 ---
 
-### Nutrition score : the Nova Score
+### Standardisation of nutrition data (EU)
+
+.pull-left[[Regulation EC 1169/11](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32011R1169) establishes the current legislation on food labelling. It's better known as **INCO**
+
+INCO requires the vast majority of pre-packed food to provide information about energy value and amount of several nutritents (fat, saturates, carbohydrate, sugars, protein and salt) in *"legible, tabular format on the packaging"* or, if space doesn't allow, in linear format. Voluntary information can be added.
+]
+
+.pul-right[![](./img/food_label_eu_standard.jpg)
+
+The information is required to be expressed per 100 grams or per 100 ml (per portion is optional).
+
+Those information can be displayed on the back of the packaging of the food product or on the front. They usually are labelled on the first, hence called *"back-of-pack nutrition labelling"*]
+
+.footnote[Credit : [esha.com](https://esha.com/products/genesis-rd-food-labeling-software/labels-and-labeling/european-union-nutrition-facts-label/).]
 
 ---
 
-### Brands vs Nutri-score : a food fight
+### Standardisation of nutrition data (US)
+
+.center[
+![Frozen lasagna food label](./img/nfl-howtounderstand-labeled.png)
+]
+
+Source : [How to Understand and Use the Nutrition Facts Label](https://www.fda.gov/food/new-nutrition-facts-label/how-understand-and-use-nutrition-facts-label), FDA.org.
+
 
 ---
 
-### Terms of the controversy
+### A step further : front-of-pack information
+
+.pull-left[According to the action plan of the new *"Farm to fork strategy"*, the European Commission intends to submit a new regulation requiring **front-of-pack nutrition information** by the end of 2022.
+
+The goals are numerous : promoting sustainable farming, restrict promotion of foods high in fats ... all falling under the umbrella of **Claims regulation**.]
+
+.pull-right[
+.center[
+![farm-to-fork](./img/food_farm2fork_ring.jpg)]
+]
+
+---
+
+### The Nutri-Score : origins
+
+
+National programs on front-of-package food labelling already exist to guide consumer's choices toward healthier food products.
+
+In 2014, Santé Publique France's Pr. Serge Hercberg and his team designed a indicator of the nutritional quality based on a letter graduation (from A to E) ranging the food products from the most to the least healthy : the [Nutri-Score](https://www.vie-publique.fr/rapport/33810-propositions-pour-un-nouvel-elan-de-la-politique-nutritionnelle).
+
+.center[
+![](./img/nutriscore_logos.png)
+]
+
+An arrêté of 2017 promotes its use. In March 2018, 52 brands commited to using them on their products.
+
+---
+
+### The Nutri-Score : rising
+
+.pull-left[
+3 years later, [a poll paid for by Santé Publique France](https://www.santepubliquefrance.fr/determinants-de-sante/nutrition-et-activite-physique/documents/enquetes-etudes/nutri-score-evolution-de-sa-notoriete-sa-perception-et-son-impact-sur-les-comportements-d-achat-declares-entre-2018-et-2020) noted the popularity of this measure :
+
+* 93% of the people surveyed knew of the Nutri-Score ;
+* 90% identify it as a tool to assess nutritious facts about food products ;
+* 18% spontaniously declare to use it for their food choices ;
+* 89% consider Nutri-Score display on food products should be mandatory.]
+
+
+.pull-right[
+This popularity was syngergised by the release of a phone app allowing consumers to display a meta nutrition score (in which the Nutri-Score accounts for 60% of the grade) by scanning barcodes : **[Yuka](https://yuka.io/)**.
+
+![](./img/yuka.png)
+]
+
+---
+
+### The Nutri-Score : resistance
+
+As its popularity grew, the Nutri-Score was adopted by more and more brands as well as other countries : Belgium, Germany and Spain. In 2019, [the proposal was made by scientists](https://www.lemonde.fr/planete/article/2021/03/16/l-appel-de-270-scientifiques-pour-l-adoption-du-logo-nutri-score-en-europe_6073326_3244.html) to take it to the EU level.
+
+And so began a food fight ...
+
+--
+
+.pull-left[
+
+[The Conversation, 10/06/2021](https://theconversation.com/lobbying-et-alimentation-les-aliments-traditionnels-le-nouvel-argument-des-anti-nutri-score-162022?utm_source=twitter&utm_medium=bylinetwitterbutton)
+
+![](./img/theconversation_nonutriscore.png)
+]
+
+.pull-right[
+[Le Monde, 03/06/2021](https://www.lemonde.fr/planete/article/2021/06/03/additifs-nitrites-l-application-yuka-condamnee-en-premiere-instance-face-a-la-federation-des-charcutiers_6082587_3244.html)
+
+![](./img/yuka_denigrement.png)
+
+]
+
+---
+
+Several methods were used by groups to block futher developpment of the Nutri-Score :
+
+* **Nutri Score - the Phantom menace** : most of the big food companies simply refused to implement the Nutri-Score, denying information about highly consumed food products and beverages (among which : Ferrero, Kellogg’s, Mars, Mondelez, Coca-Cola, PepsiCo, Unilever, Kraft ...) ;
+* **Nutri Score - The Empire strikes back** : Italian representation in the EU institutions formed a front against Nutri-Score, pushed by local government and food lobbies (escpecially [Parmigiano Regiano y Grand Padano PDO](https://www.parmigianoreggiano.com/news/parmigiano-reggiano-grana-padano-against-nutriscore/))
+* **Nutri-Score - Attack of the clones** : Italy also fought back with the creation of an alternative indicator, the Nutrinform battery system (see bellow).
+
+.center[
+![](./img/nutrinform_battery.png)
+]
+
+---
+
+
+background-image: url(https://media.giphy.com/media/Y5EZlcAXyGtJS/giphy.gif)
+
+class: inverse, center, top
+
+
+### The Nutri-Score : a new hope
+
+---
+
+### OpenFoodFacts : a common for food
+
+.pull-left[
+.center[
+![](./img/openfoodfacts-logo-en.svg)
+]
+
+[Open Food Facts](https://world.openfoodfacts.org/discover) is a collaborative database relying on citizen contribution to document food and beverages content.
+
+Created in 2012 by the French developper and food blogger Stéphane Gigandet, it references over 660000 products in 150 countries compiled by to more than 15000 contributors.]
+
+.pull-right[Thanks to food labelling regulation, contributors are able to document key nutritious facts about food products.
+
+As those data are standardised by law (amount per 100 grams or 100 ml) products can be compared.
+
+But, Open Food Facts (or OFF) also features all sort of criteria and labels, such as : allgergens, origin of the product ... and nutrition scores.]
 
 ---
 
@@ -206,13 +339,15 @@ background-image: url(https://media.giphy.com/media/8nhgZZMKUicpi/source.gif)
 
 class: inverse, center, top
 
-### How can data science help us understand this debate ?
+### Can data science help us understand this debate ?
+
 
 ---
 
 ### This way for example ?
 
 here are small multiple graphs documenting the distribution of the brands' products as documented by OpenFoodFacts regarding NOVA and/or Nutri-Score (barchart ? Scatter plot x=NOVA, y=Nutri ?) ;
+
 ---
 
 
@@ -255,6 +390,4 @@ class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) & [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & 
-
-
+Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) & [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
