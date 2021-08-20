@@ -61,6 +61,66 @@ layout: true
   background-color: #e95459;
 }
 
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
 &lt;/style&gt;
 
 
@@ -228,7 +288,7 @@ background-image: url(https://media.giphy.com/media/xUOxeRVBTkYT2yOC5y/giphy.gif
 
 ---
 
-### How Wikipedia works
+### How MediaWiki works in oFF
 
 At the top-right corner of each product page, a **Edit the page** button allows anyone to access the editing interface :
 
@@ -284,9 +344,24 @@ But there's [a wide array of reuses through the OFF API](https://wiki.openfoodfa
 
 ---
 
-### Brands contributions
+### Brands contributions
 
+Since 2020, food manufacturers can also contribute by sharing data on their products manually through a Pro interface or [automatically via the platoform of the company Equadis](https://fr.blog.openfoodfacts.org/news/des-donnees-produits-sur-open-food-facts-en-direct-des-fabricants-et-en-temps-reel-avec-equadis).
 
+OFF promotes this features with 3 main arguments :
+
+1. the visibility of the data ;
+2. the automation of nutrition score calculation ;
+3. the possibility to improve the products based on the platform's data.
+
+.pull-left-narrow[The Italian pasta manufacturer [Barilla edited this way 236 products from his various brands](https://world.openfoodfacts.org/editor/barilla) (including industrial bread Harrys).
+]
+
+.pull-right-wide[
+.center[
+![](./img/off_barilla.png)
+]
+]
 
 ---
 
@@ -298,12 +373,148 @@ background-image: url(https://media.giphy.com/media/CmFMWpEa4IFtS/giphy.gif?cid=
 
 ---
 
-### 
+.quote[As with all computer stuff, following what's going on boiles down to knowing three things:
+&lt;/br&gt;&lt;/br&gt;.center[.red[who] did .red[what] and .red[when] ?]]
+
+In *computer person language* (or, *"technical English"*), the documents compiling those informations are called **"logs"**.
+
+And, as in all MediaWiki plateform, OFF's logs are entirely public : you can access them by clicking **Edit** on a product's page and scroll down.
+
+--
+
+For example, here are the last modification to [the all wheat crustless sliced bread from Harrys](https://world.openfoodfacts.org/cgi/product.pl?type=edit&amp;code=3228857000166) :
+
+![](./img/off_harrys_logs.png)
 
 ---
 
-### The need for "progression tagging"
 
+class: inverse, center, top
+
+background-image: url(https://media.giphy.com/media/KHfidaIqN0Sqc/giphy.gif?cid=ecf05e47rb3vt9446mtch88zkol9hrhu4mts311lrfogwr6m&amp;rid=giphy.gif&amp;ct=g)
+
+## Quick trivia !!!!!
+
+--
+
+### Why do we feature the device people modified the database with ?
+
+---
+
+
+class: inverse, center, top
+
+background-image: url(https://media.giphy.com/media/kfvlYOjwdzd8nkRjku/giphy.gif?cid=ecf05e4795j1kul47dvreaaz8st4w71vl90cp3u0bl298xcq&amp;rid=giphy.gif&amp;ct=g)
+
+## ... and the answer is ...
+
+---
+
+### ... because it helps pointing OS version specific bugs !
+
+For example : in an old Android bug, the name of the product was systematically replaced with *"Loading ..."*. Most of the phones were patched ... but some still have this issue.
+
+--
+
+As you can see [here](https://world.openfoodfacts.org/cgi/search.pl?action=process&amp;search_terms=chargement%E2%80%A6&amp;sort_by=unique_scans_n&amp;page_size=24&amp;page=1&amp;sort_by=unique_scans_n) :
+
+.center[
+![](./img/off_loading_bug.png)
+]
+
+---
+
+### Contributions method means verification method
+
+By opening up its database to contribution by anyone, OFF exposes it to several issues with data consistency. We'll focus on 3 of those :
+
+1. **variability in channel of contribution** : mainly a technical issue as we saw earlier, it can partly be automated but requires human scrutiny ;
+2. **quality of input data** : for one, nutrition information is a hard topic to dig in, and its term can be confusing at times. Then, OFF uses its own taxonomy and standards to make things coherent and it's easy to deviate when you're a rookie ;
+3. **completion of the product pages** : OFF contributions can be partial and often are. Editors can just fix a quantity or add a label ... leaving entire sections of the product page empty. Hence, data completion can vary greatly from one product to another, making comparison harder if possible.
+
+---
+
+### Data quality : human scrutiny
+
+Most of the work of looking at data quality is performed via human observation and manual correction. As a collaborative database, OFF verification is fueled by the same energy as the contribution : the will to help out making it better.
+
+[Quality](https://wiki.openfoodfacts.org/Quality) page in the OFF Wiki lists some of the most frequent issues encountered.
+
+--
+
+** What kind of issue do you think are the most common and looked after ?**
+
+---
+
+### Data quality : AI at the rescue !
+
+OFF harnesses the potential of [artificial intelligence](https://wiki.openfoodfacts.org/Artificial_Intelligence) to automate tedious tasks (in short : making computer job).
+
+It works on two main tools :
+
+1. [robotoff](https://github.com/openfoodfacts/robotoff) : the OFF AI service, per say, calling machine learning models to make prediction about sections of product pages and suggesting corrections for common flaws (abusive pictures, spellchecking, bad labelling, etc.) ;
+2. [Hunger Games](https://hunger.openfoodfacts.org/) is the robotoff's annotation system. In practice, it provides an interface for human to assess the relevance of robotoff's suggestions.
+
+![](.img/off_hungergames.png)
+
+---
+
+#### robotoff's issues
+
+Because AI always needs human scrutiny [not to mess things up itself](https://github.com/openfoodfacts/robotoff/issues/355) !
+
+.center[
+![](./img/robotoff_messingup.png)
+]
+
+
+
+---
+
+### Data quality : verifications
+
+.pull-left[
+![](./img/off_verification.png)
+]
+
+.pull-right[Another project was launched to oversee a specific part of human scrutiny : [verifications](https://wiki.openfoodfacts.org/Verification).
+
+Aside from the way fields are filled by users, verification intends to create a taxonomy to *"label"* issues regarding the way data are inputed :
+
+* doubtful accounts (bots, massive edits ...) ;
+* data consistency (additives for organic products, presence of pork in products claimed *"halal"*) ;
+* [noteworthy products](https://wiki.openfoodfacts.org/Verification/Noteworthy_Products) (strange ingredients, same barcodes, etc.).]
+
+---
+
+### Data completion : state labels
+
+.pull-left-wide[
+OFF community also uses the MediaWiki features to organise human scrutiny.
+
+To follow on the level of completion of the product page and facilitate the contribution, OFF taxonomy added a specific type of label to product pages : [the state labels](https://wiki.openfoodfacts.org/State).
+
+By tagging the level of completion of each part of a product page or specific issues, OFF makes it possible to technically sort together pages needing the same kind of human intervention.
+
+#### What kind of issues do you expect to appear in the list of the state labels ?
+]
+
+--
+
+.pull-right-narrow[
+![](./img/off_state_labels.png)
+]
+---
+
+### Data completion : nudges
+
+Example : [trout](https://world.openfoodfacts.org/product/4334035448558/paves-de-truite) !
+
+![](./img/off_please_add_it.png)
+
+--
+
+.footnote[You may have guessed the photo also needs to be validated.]
 
 ---
 class: inverse, center, middle
