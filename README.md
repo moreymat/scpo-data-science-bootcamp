@@ -46,6 +46,8 @@ Program : ()
 
 ### Sequence 2.1
 
+Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?authuser=2#scrollTo=F2rdY7Lgn5qI)
+
 - load the data from a tabular format
 - store data in a variable
 - print data from the variable
