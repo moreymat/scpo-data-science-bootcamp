@@ -10,7 +10,11 @@ Data science bootcamp at Sciences Po
 * **format** : Xaringan ;
 * **presentation** : [link](https://datactivist.coop/scpo-data-science-bootcamp/day_1/introduction)
 
-### Sequence 1.1
+### Practical session
+
+Notebook [Python basics](https://colab.research.google.com/drive/1oEOzlLYryxl2RFCSN0YdXZ-bEdtCwmEc?usp=sharing).
+
+#### Sequence 1.1
 
 Goals :
 
@@ -20,18 +24,18 @@ Goals :
 - print a message
 - wrap-up
 
-### Sequence 1.2
+#### Sequence 1.2
 
 Goals :
 
-- import a package (NumPy ? Pandas ?)
+- import a package (NumPy)
 - manipulate single numbers
 - create a one-dimensional data structure
 - select elements from a one-dimensional data structure
-- make operations on elements of a one-dimensional data structure
+- perform operations on elements of a one-dimensional data structure
 - create a two-dimensional data structure
 - select elements from a two-dimensional data structure
-- make operations on elements of a two-dimensional data structure
+- perform operations on elements of a two-dimensional data structure
 - wrap-up
 
 ## Day 2 :
@@ -44,9 +48,11 @@ Goals :
 
 Program : ()
 
-### Sequence 2.1
+### Practical session
 
 Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?authuser=2#scrollTo=F2rdY7Lgn5qI)
+
+#### Sequence 2.1
 
 - load the data from a tabular format
 - store data in a variable
@@ -58,7 +64,7 @@ Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](ht
 - write an object
 - wrap-up
 
-### Sequence 2.2
+#### Sequence 2.2
 
 - load the OFF dataset
 - filter the data by a specific variable
@@ -74,11 +80,15 @@ Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](ht
 
 Program : (brands are fighting on the method of calculation of the nutrition score, let's make it ourselves)
 
-### Sequence 3.1 (make a function)
+### Practical session
+
+Notebook 
+
+#### Sequence 3.1 (make a function)
 
 - 
 
-### Sequence 3.2 (apply)
+#### Sequence 3.2 (apply)
 
 - 
 
