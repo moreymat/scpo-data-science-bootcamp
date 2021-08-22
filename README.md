@@ -12,7 +12,9 @@ Data science bootcamp at Sciences Po
 
 ### Practical session
 
-Notebook [Python basics](https://colab.research.google.com/drive/1oEOzlLYryxl2RFCSN0YdXZ-bEdtCwmEc?usp=sharing).
+Notebook [Python basics](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/1_python.ipynb)
+
+In case : Direct link to [Colab](https://colab.research.google.com/drive/1oEOzlLYryxl2RFCSN0YdXZ-bEdtCwmEc?usp=sharing)
 
 #### Sequence 1.1
 
@@ -50,7 +52,9 @@ Program : ()
 
 ### Practical session
 
-Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?usp=sharing)
+Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/2_pandas.ipynb)
+
+In case : [Colab](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?usp=sharing)
 
 #### Sequence 2.1
 
@@ -82,7 +86,9 @@ Program : (brands are fighting on the method of calculation of the nutrition sco
 
 ### Practical session
 
-Notebook [Data visualization](https://colab.research.google.com/drive/1nMbGt9yjoTTQ4pHkF7e0Yi-qVrkxR55f?usp=sharing)
+Notebook [Data visualization](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/3_dataviz.ipynb)
+
+In case : direct link to [Colab](https://colab.research.google.com/drive/1nMbGt9yjoTTQ4pHkF7e0Yi-qVrkxR55f?usp=sharing)
 
 #### Sequence 3.1 (make a function)
 
