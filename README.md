@@ -50,7 +50,7 @@ Program : ()
 
 ### Practical session
 
-Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?authuser=2#scrollTo=F2rdY7Lgn5qI)
+Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?usp=sharing)
 
 #### Sequence 2.1
 
@@ -82,7 +82,7 @@ Program : (brands are fighting on the method of calculation of the nutrition sco
 
 ### Practical session
 
-Notebook 
+Notebook [Data visualization](https://colab.research.google.com/drive/1nMbGt9yjoTTQ4pHkF7e0Yi-qVrkxR55f?usp=sharing)
 
 #### Sequence 3.1 (make a function)
 
