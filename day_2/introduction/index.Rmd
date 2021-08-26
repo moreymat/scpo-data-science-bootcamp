@@ -1,6 +1,6 @@
 ---
 title: "Data Science Bootcamp"
-subtitle: "Day 2 : digging into OpenFoodFacts"
+subtitle: "Day 2 : digging into Open Food Facts"
 author: "Mathieu Morey & Sylvain Lapoix<br>Datactivist"
 date: "August, 24rd 2021"
 output:
@@ -263,7 +263,7 @@ background-image: url(https://media.giphy.com/media/pxByU4o4jZu3XrOxct/giphy.gif
 
 ### The OFF technologie(s)
 
-OpenFoodFacts is made of [several layers of software](https://wiki.openfoodfacts.org/Software_Development) dedicated to each part of the project :
+Open Food Facts is made of [several layers of software](https://wiki.openfoodfacts.org/Software_Development) dedicated to each part of the project :
 
 * **the database** itself (Perl and MongoDB) ;
 * the website (HTML5, JS, Foundation)
@@ -274,7 +274,7 @@ OpenFoodFacts is made of [several layers of software](https://wiki.openfoodfacts
 
 All of which is open source, freely available and open to contribution [on Github](https://github.com/openfoodfacts).
 
-The tool used to allow contribution is MediaWiki, widely known as the *"Wikipedia interface"*.
+The tool used to allow contribution is similar to MediaWiki, widely known as the *"Wikipedia interface"*.
 
 ---
 
@@ -294,7 +294,7 @@ background-image: url(https://media.giphy.com/media/xUOxeRVBTkYT2yOC5y/giphy.gif
 
 ---
 
-### How MediaWiki works in oFF
+### How to start editing a product
 
 At the top-right corner of each product page, a **Edit the page** button allows anyone to access the editing interface :
 
@@ -326,7 +326,7 @@ Examples are given to help contribution.
 ### OFF's API
 
 .pull-left[
-Contributing through the wiki can be a hastle (especially when walking down supermarket isles).
+Contributing through the web interface can be a hastle (especially when walking down supermarket isles).
 
 The OFF projects allowed other apps to contribute to the project in their own interface by making available an application programming interface, or **API**. This programs works as an intermediate between the OFF database and external apps.
 
@@ -352,7 +352,7 @@ But there's [a wide array of reuses through the OFF API](https://wiki.openfoodfa
 
 ### Brands contributions
 
-Since 2020, food manufacturers can also contribute by sharing data on their products manually through a Pro interface or [automatically via the platoform of the company Equadis](https://fr.blog.openfoodfacts.org/news/des-donnees-produits-sur-open-food-facts-en-direct-des-fabricants-et-en-temps-reel-avec-equadis).
+Since 2020, food manufacturers can also contribute by sharing data on their products manually through a Pro interface or [automatically via the platform of the company Equadis](https://fr.blog.openfoodfacts.org/news/des-donnees-produits-sur-open-food-facts-en-direct-des-fabricants-et-en-temps-reel-avec-equadis).
 
 OFF promotes this features with 3 main arguments :
 
@@ -384,7 +384,7 @@ background-image: url(https://media.giphy.com/media/CmFMWpEa4IFtS/giphy.gif?cid=
 
 In *computer person language* (or, *"technical English"*), the documents compiling those informations are called **"logs"**.
 
-And, as in all MediaWiki plateform, OFF's logs are entirely public : you can access them by clicking **Edit** on a product's page and scroll down.
+And, following the Wikipedia's example, OFF's logs are entirely public : you can access them by clicking **Edit** on a product's page and scroll down.
 
 --
 
@@ -496,7 +496,7 @@ Aside from the way fields are filled by users, verification intends to create a 
 ### Data completion : state labels
 
 .pull-left-wide[
-OFF community also uses the MediaWiki features to organise human scrutiny.
+OFF software also has features to organise human scrutiny.
 
 To follow on the level of completion of the product page and facilitate the contribution, OFF taxonomy added a specific type of label to product pages : [the state labels](https://wiki.openfoodfacts.org/State).
 
