@@ -8,13 +8,13 @@ Data science bootcamp at Sciences Po
 
 * **lead** : Sylvain ;
 * **format** : Xaringan ;
-* **presentation** : [link](https://moreymat.github.io/scpo-data-science-bootcamp/day_1/introduction/#1)
+* **presentation** : [link](https://datactivist.github.io/scpo-data-science-bootcamp/day_1/introduction/#1)
 
 ### Practical session
 
 Colab Notebook [Python basics](https://colab.research.google.com/drive/1oEOzlLYryxl2RFCSN0YdXZ-bEdtCwmEc?usp=sharing)
 
-Source : <https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/1_python.ipynb>
+Source : <https://github.com/datactivist/scpo-data-science-bootcamp/blob/main/notebooks/1_python.ipynb>
 
 #### Sequence 1.1
 
@@ -46,7 +46,7 @@ Goals :
 
 * **lead** : Sylvain ;
 * **format** : Xaringan ;
-* **presentation** : [link](https://moreymat.github.io/scpo-data-science-bootcamp/day_2/introduction/#1)
+* **presentation** : [link](https://datactivist.github.io/scpo-data-science-bootcamp/day_2/introduction/#1)
 
 Program : ()
 
@@ -54,7 +54,7 @@ Program : ()
 
 Colab Notebook [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?usp=sharing)
 
-Source : <https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/2_pandas.ipynb>
+Source : <https://github.com/datactivist/scpo-data-science-bootcamp/blob/main/notebooks/2_pandas.ipynb>
 
 #### Sequence 2.1
 
@@ -88,7 +88,7 @@ Program : (brands are fighting on the method of calculation of the nutrition sco
 
 Colab Notebook [Data visualization](https://colab.research.google.com/drive/1nMbGt9yjoTTQ4pHkF7e0Yi-qVrkxR55f?usp=sharing)
 
-Source : <https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/3_dataviz.ipynb>
+Source : <https://github.com/datactivist/scpo-data-science-bootcamp/blob/main/notebooks/3_dataviz.ipynb>
 
 #### Sequence 3.1 (make a function)
 
