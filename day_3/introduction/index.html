@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Data Science Bootcamp</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mathieu Morey &amp; Sylvain Lapoix Datactivist" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
+    <meta name="description" content="Data Science Bootcamp"/>
+    <meta name="github-repo" content="datactivist/scpo-data-science-bootcamp"/>
+    <meta name="twitter:description" content="Data Science Bootcamp"/>
+    <meta name="twitter:url" content="https://datactivist.coop/scpo-data-science-bootcamp"/>
+    <meta name="twitter:image" content="https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png"/>
+    <meta name="twitter:image:alt" content="Datactivist logo"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:creator" content="@datactivi_st"/>
+    <meta name="twitter:site" content="@datactivi_st"/>
+    <meta property="og:description" content="Data Science Bootcamp"/>
+    <meta property="og:url" content="https://datactivist.coop/scpo-data-science-bootcamp"/>
+    <meta property="og:image" content="https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png"/>
+    <meta property="og:image:alt" content="Datactivist logo"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:site_name" content="Datactivist"/>
+    <meta property="article:author" content="Datactivist"/>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Science Bootcamp
+## Day 3 : data science<br>everywhere
+### Mathieu Morey &amp; Sylvain Lapoix<br>Datactivist
+### August, 25rd 2021
+
+---
+
+
+
+
+layout: true
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
+
+&lt;/style&gt;
+
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Data Science Bootcamp&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;a href='https://datactivist.coop/'&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/a&gt;&lt;/div&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+class: center, middle
+
+This presentation is available at : http://datactivist.coop/scpo-data-science-bootcamp/day_3/introduction
+
+Sources : https://github.com/datactivist/scpo-data-science-bootcamp/day_3/introduction
+
+
+All Datactivist productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+---
+
+background-image: url(https://media.giphy.com/media/lQCZNoImQVZvRWChuS/giphy.gif?cid=ecf05e47prx5gdrdg73edt8ggf3qilq1z3q9nynt5t1gqjeu&amp;rid=giphy.gif&amp;ct=g)
+class: inverse, center, top
+
+### WARNING !&lt;br&gt;this presentation will feature many GIFs and western pop culture references
+
+---
+
+class: center, top
+
+## After this bootcamp, you may want to escape data science
+
+--
+
+.center[
+![](https://media.giphy.com/media/Zxzr2pp6qU64g/giphy.gif?cid=ecf05e477juoqe125eb3jzgxt06xr20mxv9ucjt3uehfhm4r&amp;rid=giphy.gif&amp;ct=g)
+]
+
+## for good ...
+
+---
+
+background-image: url(https://media.giphy.com/media/13ROLRgvNf5WQo/giphy.gif?cid=ecf05e4784jizw5cdsfi7b38uapop892fbhcsza9sh3y3iq6&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+
+## ... unfortunately for you, it will be hard to avoid it
+
+---
+
+background-image: url(https://media.giphy.com/media/xT9C25UNTwfZuk85WP/giphy-downsized-large.gif?cid=ecf05e471uzc5tuw52n0dslae0e6hksd2e0cqmqzm7jjcker&amp;rid=giphy-downsized-large.gif&amp;ct=g)
+class: center, top
+
+## Whatever path you choose,&lt;br&gt;you'll find data on your way
+
+---
+
+background-image: url(https://media.giphy.com/media/LWFeKOW41NHOIbDNXu/giphy.gif?cid=ecf05e47fq7k9m142959q1yulwbb6qa0bbukf3kwzzr7jw8u&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### The best way to deal with it :
+
+## embrace its power !
+
+---
+
+class: center, middle, inverse
+
+# 7 reasons to keep using data science
+
+---
+
+background-image: url(https://media.giphy.com/media/dIBLtolI6axTGIGopo/giphy.gif?cid=790b7611cc38e7cdfe931af73749559f1f6e6cd8b59cd51e&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 1. You are socially made of data
+
+However disconnected you are.
+
+---
+
+background-image: url(https://media.giphy.com/media/AWv3UAFkgz39u/giphy.gif?cid=ecf05e47lln96kt74e7etz7fnrzrs8b9bdlgkb4rcvp9ksso&amp;rid=giphy.gif&amp;ct=g)
+class: center, top, inverse
+
+### Pop quizz : prove this wrong !
+
+---
+
+background-image: url(https://media.giphy.com/media/DOdsiolqbxCbm/giphy.gif?cid=ecf05e471axfmaphooznqumn23y7rqtg6yt9swrn0gwd99ig&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 2. Data isn't "in the news",&lt;br&gt;it often IS the news
+
+---
+
+.pull-left-narrow[Revelations about databases, the handling of data by government or private companies, evolution of regulation ... data is not only a material for newsrooms, it became a topic by itself.
+
+Mainly personal data, but not only.
+
+On the right : [The Intercept, August, 18 2021](https://theintercept.com/2021/08/17/afghanistan-taliban-military-biometrics/).]
+
+.pull-right-wide[
+![](./img/theintercept_biometrics_talibans.png)
+]
+
+---
+
+background-image: url(https://media.giphy.com/media/Xtg9ygGsjvouF7vZ1w/giphy.gif?cid=790b7611ac9f762b6c94e77710e55979f7927fa9045f2fc0&amp;rid=giphy.gif&amp;ct=g)
+class: center, top, inverse
+
+### Also, it can help you decypher&lt;br&gt;booby-trapped buzz words
+
+---
+
+background-image: url(https://media.giphy.com/media/rcOlpTCkM1GAE/giphy.gif?cid=ecf05e473nrow275hto7jt02jkwjimn3jdkeamm9h1vd9nvl&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 3. Data related issues impact all policies
+
+---
+
+.center[![](./img/excel_bug.png)
+
+Who thought a server's choice could have such a terrible consequence ?
+
+Source : [The Guardian, October 6, 2020](https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england).
+]
+
+---
+
+background-image: url(https://media.giphy.com/media/3o7aTFnG95Q8VIsRqw/giphy.gif?cid=790b7611f91fef2b70c6bf2b331ea08e16fae98311e7099e&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 4. Data science is a new language
+
+--
+
+.footnote[I told you Matthieu I would mention classic American musicals in the class !]
+
+---
+
+.pull-left-wide[
+.center[
+![](./img/data_scientist_recruitement.png)
+]
+]
+
+.pull-left-narrow[Wherever you'll get a job, it's pretty likely you end up talking to a data scientist.
+
+Better be prepared.
+
+Take a look at the companies and organizations recruiting data scientists, you may be surprised !
+
+Source : [Apec.fr, on August 24th 2021](https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=data%20scientist&amp;page=1).]
+
+---
+
+background-image: url(https://media.giphy.com/media/4onH6IzqTeS2iqWh77/giphy.gif?cid=ecf05e47bj9l0kuyof695rt8annquyj8l5aoclq2j0vs4txi&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 5. "Code is law"
+
+---
+
+background-image: url(https://media.giphy.com/media/5dYeglPmPC5lL7xYhs/giphy.gif?cid=ecf05e47wmxzc23ktqkqsyq8ja8vgvlovdg9fjal6dw8983e&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 6. Data-driven decisions are among us
+
+Like, for real.
+
+---
+
+background-image: url(https://media.giphy.com/media/2nt2dX21yO0NAaP7BS/giphy.gif?cid=ecf05e47o03pz67ajidpwh5m1hcxzlzrdtz4e155vhkr889w&amp;rid=giphy.gif&amp;ct=g)
+class: center, top
+
+### 7. Data is a place of power
+
+On all sides.
+
+---
+
+.pull-left[
+### Google's GTFS
+
+Never heard of it ? Well, it practically rules public transportation sector.
+
+]
+
+.pull-right[
+### Statactivism
+
+![](./img/statactivisme.jpg)
+]
+
+---
+class: inverse, center, middle
+
+# Questions ?
+
+Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) &amp; [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="matomo.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
