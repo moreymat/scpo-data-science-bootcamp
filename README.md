@@ -6,7 +6,7 @@ Data science bootcamp at Sciences Po
 
 ### Morning
 
-* presentation : what is this class all about ? ([slides](datactivist.coop/scpo-data-science-bootcamp/presentations/day_1/intro_class))
+* presentation : what is this class all about ? ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_1/intro_class))
 * workshop : (Google colab)
 
 ### Afternoon
