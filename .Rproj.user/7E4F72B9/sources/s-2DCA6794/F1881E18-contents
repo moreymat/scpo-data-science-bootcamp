@@ -1,8 +1,8 @@
 ---
-title: "Data Science Bootcamp<br>*Day 1 : Part 1*"
-subtitle: "what is this class all about ?"
-author: "Mathieu Morey, Sylvain Lapoix &<br> Clément Mandron, Datactivist"
-date: "August, 22nd 2022"
+title: "Data Science Bootcamp"
+subtitle: "Day 3 : data science<br>everywhere"
+author: "Mathieu Morey & Sylvain Lapoix<br>Datactivist"
+date: "August, 25rd 2021"
 output:
   SlidesDatactivist::moon_reader:
     css: [default, datactivist, datactivist-fonts]
@@ -20,8 +20,8 @@ output:
 params:
   event: Data Science Bootcamp
   slug: scpo-data-science-bootcamp
-  session: day_1
-  module: intro_class
+  session: day_3
+  module: introduction
   image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
   image_alt: Datactivist logo
 ---
@@ -67,6 +67,69 @@ layout: true
   background-color: #e95459;
 }
 
+
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
+
 </style>
 
 
@@ -77,9 +140,9 @@ layout: true
 
 class: center, middle
 
-This presentation is available at : `r paste0("http://datactivist.coop/", params$slug, "/presentations/", params$session, "/", params$module)`
+This presentation is available at : `r paste0("http://datactivist.coop/", params$slug, "/", params$session, "/", params$module)`
 
-Sources : `r paste0("https://github.com/datactivist/", params$slug, "/presentations/", params$session, "/", params$module)`
+Sources : `r paste0("https://github.com/datactivist/", params$slug, "/", params$session, "/", params$module)`
 
 
 All Datactivist productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
@@ -89,92 +152,6 @@ All Datactivist productions are freely usable under the terms of [Creative Commo
 
 ![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
 
----
-
-background-image: url(https://media.giphy.com/media/7AJdZ5SgaRQC4/giphy.gif)
-class: inverse, center, top
-
-
-# This presentation is under construction
-
-.footnote[Please come back on August, 22nd<br>for release.]
-
----
-
-# Disclaimer : our moto
-
-> There are no silly questions.
-
---
-
-> There's only awkward silences.
-
-
----
-
-### The bootcamp
-
-* What's the principle ?
-* What's the tool ?
-* What's the timetable ?
-
-
----
-
-### The objectives
-
-* understanding what's Python ;
-* understanding what's a notebook and learning how to use it ;
-* understanding what's data science ;
-* learning how to perform basic data exploration ;
-* learning how to answer questions with a dataset.
-
----
-
-### The teachers
-
-```{css, echo=F}
-    /* Table width = 100% max-width */
-
-    .remark-slide table{
-        width: 100%;
-    }
-
-    /* Change the background color to white for shaded rows (even rows) */
-
-    .remark-slide thead, .remark-slide tr:nth-child(2n) {
-        background-color: #fff1eb;
-    }
-```
-
-**Mathieu Morey** | **Sylvain Lapoix** | **Clément Mandron (TA)**
---------|---------|---------
-.center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/03_mathieu.png)] | .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/02_sylvain.png)] | .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/13_clem.png)]
-He is a researcher in computer science, specialized in data science and machine learning. He is also consultant at .red[Datactivist]. | Datajournalist and consultant at .red[Datactivist], he works with civil society and public actors on data literacy, data analysis & open data. | Graduated from the Urban School of SciencesPo, he is consultant at .red[Datactivist] and works with local and national governments.
-
----
-
-## What is .red[Datactivist] ?
-
-.center[[![:largeur 80%](https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png)](https://datactivist.coop)]
-
-### We .red[open data], we make them .red[useful]
-
----
-
-background-image: url(https://media.giphy.com/media/3o6gaYez5IKFNoLbI4/source.gif)
-class: inverse, center, top
-
-
-## And ... who are you ?
-
----
-
-background-image: url(https://media.giphy.com/media/d1E1kn94NNfrlPGw/source.gif)
-class: inverse, center, top
-
-
-# What is this class ?
 
 ---
 
@@ -185,10 +162,47 @@ class: inverse, center, top
 
 ---
 
+class: center, top
+
+## After this bootcamp, you may want to escape data science
+
+--
+
+.center[
+![](https://media.giphy.com/media/Zxzr2pp6qU64g/giphy.gif?cid=ecf05e477juoqe125eb3jzgxt06xr20mxv9ucjt3uehfhm4r&rid=giphy.gif&ct=g)
+]
+
+## for good ...
+
+---
+
+background-image: url(https://media.giphy.com/media/13ROLRgvNf5WQo/giphy.gif?cid=ecf05e4784jizw5cdsfi7b38uapop892fbhcsza9sh3y3iq6&rid=giphy.gif&ct=g)
+class: center, top
+
+
+## ... unfortunately for you, it will be hard to avoid it
+
+---
+
+background-image: url(https://media.giphy.com/media/xT9C25UNTwfZuk85WP/giphy-downsized-large.gif?cid=ecf05e471uzc5tuw52n0dslae0e6hksd2e0cqmqzm7jjcker&rid=giphy-downsized-large.gif&ct=g)
+class: center, top
+
+## Whatever path you choose,<br>you'll find data on your way
+
+---
+
+background-image: url(https://media.giphy.com/media/LWFeKOW41NHOIbDNXu/giphy.gif?cid=ecf05e47fq7k9m142959q1yulwbb6qa0bbukf3kwzzr7jw8u&rid=giphy.gif&ct=g)
+class: center, top
+
+### The best way to deal with it :
+
+## embrace its power !
+
+---
+
 class: center, middle, inverse
 
-# 7 reasons why...
-## ...we talk about data science in a public affairs seminar
+# 7 reasons to keep using data science
 
 ---
 
@@ -298,6 +312,8 @@ class: center, top
 
 ### 7. Data is a place of power
 
+On all sides.
+
 ---
 
 .pull-left[
@@ -314,9 +330,8 @@ Never heard of it ? Well, it practically rules public transportation sector.
 ]
 
 ---
-
 class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop), [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & [clement@datactivist.coop](mailto:clement@datactivist.coop)
+Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) & [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)

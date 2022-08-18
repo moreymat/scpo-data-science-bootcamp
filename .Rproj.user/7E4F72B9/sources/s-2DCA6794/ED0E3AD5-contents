@@ -1,0 +1,13 @@
+name: scpo-bootcamp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7  # colab 2022-07-04: 3.7.13
+  - jupyterlab
+  - scipy=1.4.1
+  - numpy=1.21.6
+  - pandas=1.3.5
+  - matplotlib=3.2.2
+  - seaborn=0.11.2
+  - scikit-learn=1.0.2
