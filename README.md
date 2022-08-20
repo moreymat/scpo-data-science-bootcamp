@@ -36,7 +36,11 @@ Data science bootcamp at Sciences Po
 ### Afternoon
 
 * presentation : completary labels for a balanced data diet ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_3/alternative_indicators))
-* workshop : Google colab (continued)
+* workshop : Google colab (continued) + [project](https://colab.research.google.com/drive/1je-8IMkHaNBVbVklhen_rDgetaGT_L_H?usp=sharing)
+
+## Bonus
+
+* [bonus for the Machine Learning enthusiasts](https://colab.research.google.com/drive/1_iVLmtmqqyUMX93WJ_1cjWloXYtpKydQ?usp=sharing)
 
 -------------------
 
