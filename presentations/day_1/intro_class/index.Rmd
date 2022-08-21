@@ -143,7 +143,6 @@ class: inverse, center, top
 .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/03_mathieu.png)] | .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/02_sylvain.png)] | .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/13_clem.png)]
 He is a researcher in computer science, specialized in data science and machine learning. He is also consultant at .red[Datactivist]. | Datajournalist and consultant at .red[Datactivist], he works with civil society and public actors on data literacy, data analysis & open data. | Graduated from the Urban School of SciencesPo, he is consultant at .red[Datactivist] and works with local and national governments.
 
-1
 ---
 
 ### What is .red[Datactivist] ? 
@@ -160,7 +159,6 @@ He is a researcher in computer science, specialized in data science and machine 
 
 - We believe .red[**research**] can help us better understand and solve the issue we face in the open data field
 
-2
 ---
 class: middle
 
@@ -213,7 +211,7 @@ class: inverse, center, top
 
 ---
 
-### .red[For what] purposes will you practice data science in a public affairs class ?
+### .red[For what purposes] will you practice data science in a public affairs class ?
 
 
 * **#1** Digital transformation of organization is now based on (open) data
@@ -350,12 +348,58 @@ Two new acts part of the .red[European Data Strategy (2020)] :
 .center[<img src="https://media.giphy.com/media/JrYnKirK79252t3wDs/giphy.gif"/>]
 
 ---
+class: middle
 
-### Let's dirt our hands !
+.pull-left[
+**The Github repo will be your house for this bootcamp**. Link : https://github.com/datactivist/scpo-data-science-bootcamp
 
-- Modulo 
-- Google collab
+1- Follow the link of the Google Colab notebook
 
+<img src="./img/github.png" height="100"/>
+
+2- Save a copy of the notebook in your own Google Drive storage
+
+<img src="./img/colab.png" height="150"/>
+
+]
+
+.pull-right[
+
+**Breaks and back to plenary :**
+
+- 11:25 - break - 15 minutes (please come back at 11:40 !)
+- 12:40 - group correction - 20 minutes
+
+- 1:00 - **lunch break** - 60 minutes (please come back at 2:00 !)
+
+- 3:25 - break 2 - 15 minutes (please come back at 3:40 !)
+- 4:35 - break 3 - 15 minutes (please come back at 4:50 !)
+
+- 5:20 - group correction and quizz day 1
+
+]
+
+---
+class: middle
+
+.pull-left[
+**The Github repo will be your house for this bootcamp**. Link : https://github.com/datactivist/scpo-data-science-bootcamp
+
+1- Follow the link of the Google Colab notebook
+
+<img src="./img/github.png" height="100"/>
+
+2- Save a copy of the notebook in your own Google Drive storage
+
+<img src="./img/colab.png" height="150"/>
+
+]
+
+.pull-right[
+
+<img src="./img/modulo.png" height="600"/>
+
+]
 
 
 ---
