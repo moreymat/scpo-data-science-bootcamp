@@ -96,16 +96,16 @@ All Datactivist productions are freely usable under the terms of [Creative Commo
 
 --
 
-> There's only awkward silences.
+> There are only awkward silences.
 
 
 ---
 
 ### The objectives
 
-* understanding what's Python ;
-* understanding what's a notebook and learning how to use it ;
-* understanding what's data science ;
+* understanding what Python is ;
+* understanding what a notebook is and learning how to use it ;
+* understanding what data science is ;
 * learning how to perform basic data exploration ;
 * learning how to answer questions with a dataset.
 
@@ -130,43 +130,41 @@ All Datactivist productions are freely usable under the terms of [Creative Commo
 **Mathieu Morey** | **Sylvain Lapoix** | **Clément Mandron (TA)**
 --------|---------|---------
 .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/03_mathieu.png)] | .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/02_sylvain.png)] | .center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/13_clem.png)]
-He is a researcher in computer science, specialized in data science and machine learning. He is consultant at .red[Datactivist]. | Datajournalist and consultant at .red[Datactivist], he works with civil society and public actors on data literacy, data analysis & open data. | Graduated from the Urban School of SciencesPo, he is consultant at .red[Datactivist] and works with local and national governments.
+Researcher and consultant at .red[Datactivist]. Works with public actors on data science, machine learning and natural language processing. | Datajournalist and consultant at .red[Datactivist]. Works with the civil society and public sector on data literacy, data analysis & open data. | Consultant at .red[Datactivist], graduated from the Urban School of SciencesPo. Works with local and national governments.
 
 ---
 
-### What is .red[Datactivist] ? 
-
-### We .red[open data], we make them .red[useful]
+### .red[Datactivist]: We .red[open data], we make them .red[useful]
 
 <img style="float:right; margin:10px ; width:200px" src="https://datactivist.coop/recife/img/stickerdatapeople.png" />
 
-- Datactivist is a French cooperative company specialized in open data created in 2016 with a mission to .red[**open data and make them useful**].
+- Datactivist is a French cooperative company specialized in open data, created in 2016.
 
-- On all stages of the work of opening data, Datactivist works with .red[**both data producers and reusers**] and participates in the appropriation of data by everyone.
+- We work throughout the entire lifecycle of data with .red[**both data producers and reusers**] and participate in the appropriation of data by everyone.
 
-- We practice what we preach and our dedication to the .red[**commons**] : we are a workers co-operative and our productions are freely usable by anyone.
+- We practice what we preach and contribute to .red[**commons**] : we are a workers co-operative and our productions are freely usable by anyone.
 
-- We believe .red[**research**] can help us better understand and solve the issue we face in the open data field
+- We believe .red[**research**] can help us better understand and solve the issues we face in the open data field.
 
 ---
 class: middle
 
-### Why .red[Datactivist] talks to you about data science ? 
+### Why does .red[Datactivist] talk to you about data science ? 
 
 --
 
 
 .pull-left[
-**1. We are working with organizations you are likely to work for**
+**1. We are working with organizations you are likely to work for (or equiv.)**
 
-**2. Our methods: the digital transformation by the (open) data**
+**2. Our approach to digital transformation is (open) data centric and user centric**
 ]
 
 .pull-right[![](./img/clients.png)]
 
 ---
 
-### One (very) quick example of what .red[Datactivist] can do
+### One (very) quick example of what we do
 
 
 **Research and data mapping for the RATP** about all data sources available at regional level.
@@ -188,10 +186,10 @@ class: inverse, center, top
 
 ---
 
-### .red[For what purposes] will you practice data science in a public affairs class ?
+### .red[For what purposes] will you practice data science in a public affairs curriculum ?
 
 
-* **#1** Digital transformation of organization is now based on (open) data
+* **#1** Digital transformation of organizations is now based on (open) data
 
 * **#2** Data are raw material to design and implement data-driven policies
 
@@ -199,7 +197,7 @@ class: inverse, center, top
 
 ---
 
-### #1 - Digital transformation of organization is now based on .red[(open) data]
+### #1 - Digital transformation of organizations is now based on .red[(open) data]
 
 
 .left-column[**Step 1 : From information systems services to digital services**]
@@ -209,7 +207,7 @@ class: inverse, center, top
 
 ---
 
-### #1 - Digital transformation of organization is now based on .red[(open) data]
+### #1 - Digital transformation of organizations is now based on .red[(open) data]
 
 .left-column[**Step 2 : From digital services to digital AND data services**]
 
@@ -249,7 +247,7 @@ Data may be :
 ### #2 - Data are raw material to design and implement .red[data-driven policies]
 
 .pull-left[
-**Some fileds and ideas :**
+**Some fields and ideas :**
 
 - Public spending control
 - Carbon budgets
@@ -266,7 +264,7 @@ Data may be :
 
 - OECD reports
 - Public policy assessment
-- Covid dashboards
+- COVID-19 dashboards
 - Census data
 - ...
 
@@ -324,14 +322,14 @@ class: middle
 
 **Breaks and back to plenary :**
 
-- 11:25 - break - 15 minutes (please come back at 11:40 !)
-- 12:40 - group correction - 20 minutes
+- 11:25 - break - 15 min (please come back at 11:40 !)
+- 12:40 - group correction - 20 min
 
-- 1:00 - **lunch break** - 60 minutes (please come back at 2:00 !)
-- after lunch breah - 20 minutes presentation by Syvlain
+- 1:00 - **lunch break** - 60 min (please come back at 2:00 !)
+- after lunch breah - 20 min presentation by Syvlain
 
-- 3:25 - break 2 - 15 minutes (please come back at 3:40 !)
-- 4:35 - break 3 - 15 minutes (please come back at 4:50 !)
+- 3:25 - break 2 - 15 min (please come back at 3:40 !)
+- 4:35 - break 3 - 15 min (please come back at 4:50 !)
 
 - 5:20 - group correction and quizz day 1
 
