@@ -88,6 +88,11 @@ All Datactivist productions are freely usable under the terms of [Creative Commo
 <BR>
 
 ![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+???
+
+test comment
+
 ---
 
 # Disclaimer : our moto
@@ -173,7 +178,10 @@ class: middle
 
 .center[<img src="./img/bonjour.png" height="250"/>]
 
+???
 
+people working in a niche market - open data - datactivist has evolved with the demands of its customers by going up the whole data cycle (open data being the final step). We now help organizations to engage their digital transformation - big pictures - but at the center of our methods: the digital transformation by the data - and even the opening of the data 
+And this is a trend that we see in the organizations you are likely to work for later on
 
 ---
 
@@ -214,6 +222,13 @@ class: inverse, center, top
 .right-column[![](./img/cddo.png)
 [Source](https://www.publictechnology.net/articles/news/scores-gds-staff-moved-new-central-digital-and-data-office)
 ]
+
+???
+
+Center of digital and data office CDDO directly part of the cabinet office (drived by UK's Prime Minister) - the cabinet office is in charge of setting priorities for the prime minister action and also take care of cross-departmental policies which is obvious for digital transformation 
+
+Government Digital Service steps into its new role as the centre of the government’s digital transformation of products, platforms and services.
+
 ---
 
 ### #2 - Data are raw material to design and implement .red[data-driven policies]
@@ -281,6 +296,11 @@ Data may be :
 .center[<img src="./img/edj.png" height="400"/>]
 
 .center[https://climatechange.europeandatajournalism.eu/en/map]
+
+???
+
+ This map provides access to mini-dashboards that represent climate variations on an ultra-local scale. The data come from several European sources, including Copernicus.
+
 
 ---
 
