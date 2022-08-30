@@ -34,7 +34,7 @@ Data science bootcamp at Sciences Po
 
 ### Afternoon
 
-* workshop : contributing to OpenFoodFacts to uncover the *"prodocution side"* of data.
+* workshop : contributing to OpenFoodFacts to uncover the *"production side"* of data.
 * workshop : Google colab (continued) + [project](https://colab.research.google.com/drive/1je-8IMkHaNBVbVklhen_rDgetaGT_L_H?usp=sharing)
 
 ## Bonus
