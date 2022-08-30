@@ -67,6 +67,67 @@ layout: true
   background-color: #e95459;
 }
 
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
 </style>
 
 
@@ -91,20 +152,228 @@ All Datactivist productions are freely usable under the terms of [Creative Commo
 
 ---
 
-background-image: url(https://media.giphy.com/media/7AJdZ5SgaRQC4/giphy.gif)
+background-image: url(https://media.giphy.com/media/l3q2t2KAyvxy9xBe0/giphy.gif?cid=ecf05e4701gh6rbykibixbhyh5wvnfyql78ctbqm09qrekbf&rid=giphy.gif&ct=g)
+
 class: inverse, center, top
 
 
-# This presentation is under construction
-
-.footnote[Please come back on August, 23rd<br>for release.]
+## What tool do you use, as a consumer, to assess nutritious facts ?
 
 
 ---
 
+### The Nutri-Score's brit uncle : the NP
+
+.pull-left[
+.center[
+![](./img/ofcom_obesity.png)
+]
+]
+
+.pull-right[
+[The NP (for nutrient profiling) model](https://www.gov.uk/government/publications/the-nutrient-profiling-model) was developped by the UK Food Standard Administration in 2004-2005 to help the Office for Communication improve balance of television advertising for kids
+
+This administration having introduced in 2007 controls restricting advertising for foods high in fat, salt and sugar (HFSS) and promoting their alternatives, the NP model focused on the beneficial nutrients important for chilren's diet.
+]
+
+---
+
+### Grading system
+
+The NP grading system is based on proportion of macro nutritent for 100 grams of weight.
+
+It grants *"A points"* for good nutrients and *"C points"* for bad ones.
+
+.pull-left[
+.center[
+![](./img/np_apoint_table.png)
+]
+]
+
+--
+
+.pull-right[
+With a delighfully specific policy for coconut and its byproducts.
+
+![](./img/np_coconut.png)
+]
+
+---
+
+
+background-image: url("https://media.giphy.com/media/QutMixj7ca3deO7B0h/giphy.gif")
+class: center, top, inverse
+
+### But why for 100 grams ?
+
+---
+
+### Nutrition information
+
+Nutrition information is a highly controversial and regulated topic in Europe and in the US.
+
+Dating back to 1979, EU regulation on food labelling was initially designed as a tool for the free circulation of food products and beverages in the European community ([Directive 79/112/EEC](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31979L0112)).
+
+Mandatory labelling in the US was introduced in the 1960's, with the rise of prepared meals, listing the ingredients. But it's only in 1990 the USDA passed the obligation of displaying *"consistent claims"* about **nutritious facts**.
+
+Later, demand for further details emerged. Food labelling came at the intersection of two highly political topics :
+
+1. health ;
+2. public information.
+
+
+---
+
+### Standardisation of nutrition data (EU)
+
+.pull-left[[Regulation EC 1169/11](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32011R1169) establishes the current legislation on food labelling. It's better known as **INCO**
+
+INCO requires the vast majority of pre-packed food to provide information about energy value and amount of several nutritents (fat, saturates, carbohydrate, sugars, protein and salt) in *"legible, tabular format on the packaging"* or, if space doesn't allow, in linear format. Voluntary information can be added.
+]
+
+.pull-right[![](./img/food_label_eu_standard.jpg)
+
+The information is required to be expressed .red[**per 100 grams or per 100 ml**] (per portion is optional).
+
+Those information can be displayed on the back of the packaging of the food product or on the front. They usually are labelled on the first, hence called *"back-of-pack nutrition labelling"*]
+
+.footnote[Credit : [esha.com](https://esha.com/products/genesis-rd-food-labeling-software/labels-and-labeling/european-union-nutrition-facts-label/).]
+
+---
+
+### Standardisation of nutrition data (US)
+
+.center[
+![Frozen lasagna food label](./img/nfl-howtounderstand-labeled.png)
+]
+
+Source : [How to Understand and Use the Nutrition Facts Label](https://www.fda.gov/food/new-nutrition-facts-label/how-understand-and-use-nutrition-facts-label), FDA.org.
+
+
+---
+
+background-image: url(https://media.giphy.com/media/l4RKhOL0xiBdbgglFi/giphy.gif)
+
+class: inverse, center, top
+
+### Nutrition grading = effect of data availability
+
+
+---
+
+### A step further : front-of-pack information
+
+.pull-left[According to the action plan of the new *"Farm to fork strategy"*, the European Commission intends to submit a new regulation requiring **front-of-pack nutrition information** by the end of 2022.
+
+The goals are numerous : promoting sustainable farming, restrict promotion of foods high in fats ... all falling under the umbrella of **claims regulation**.]
+
+.pull-right[
+.center[
+![farm-to-fork](./img/food_farm2fork_ring.jpg)]
+]
+
+
+---
+
+background-image: url(https://media.giphy.com/media/13rnKUt0bn5LVe/giphy.gif)
+
+class: inverse, center, top
+
+### The Nutri-Score : origins
+
+---
+
+### The Nutri-Score : a "score" for health nutrition national plan
+
+
+In 2014, Santé Publique France's Pr. Serge Hercberg and his team designed a indicator of the nutritional quality based on a letter graduation (from A to E) ranging the food products from the most to the least healthy : the [Nutri-Score](https://www.vie-publique.fr/rapport/33810-propositions-pour-un-nouvel-elan-de-la-politique-nutritionnelle). It sets two goals to the this "score" :
+
+.pull-left[
+*a) permettre aux consommateurs d’appréhender en un coup d’œil et de façon
+compréhensible la qualité nutritionnelle globale des aliments au moment de leur
+acte d’achat. Le consommateur pourra ainsi intégrer la dimension nutritionnelle
+dans les arbitrages orientant ses choix par une comparaison simple entre aliments
+de familles différentes et, dans la même famille, entre différentes marques ou
+entre formulations d’une même marque ;*
+]
+
+.pull-right[
+*b) inciter les producteurs et distributeurs d’aliments à améliorer la qualité
+nutritionnelle des aliments qu’ils produisent ou distribuent afin de « bénéficier »
+d’un positionnement le plus favorable possible sur le système d’information
+nutritionnel (sur l’échelle de qualité nutritionnelle visible par les consommateurs)
+et ainsi valoriser leur effort en terme de reformulation nutritionnelle ou
+d’innovation.*
+
+]
+
+---
+
+### "At a glance"
+
+.center[
+![](./img/nutriscore_logos.png)
+]
+
+An arrêté of 2017 promotes its use. In March 2018, 52 brands commited to using them on their products.
+
+---
+
+### Calculation method 1 : scoring
+
+The calculation metohd is based on **nutritent ratio for 100 g or ml**. Depending on the ratio for each nutrient, a number of points is attributed following a general rule : **the lower, the better**.
+
+.pull-left[
+.center["N" for "negative" nutrients :
+![](./img/nutriscore_n_points.png)
+]]
+
+.pull-right[
+.center["P" for "positive" nutrients :
+![](./img/nutriscore_p_points.png)
+]]
+
+Many other specific cases apply. Notably for :
+
+* **beverages** with a specific scoring scale and a dedicated grading system (see next slide);
+* **infant food products** with a specific scoring system for added fats.
+
+Source : [Santé Publique France, 2021](https://www.santepubliquefrance.fr/determinants-de-sante/nutrition-et-activite-physique/articles/nutri-score#block-322596).
+
+---
+
+### Calculation method 2 : grading
+
+The final score is compared to a scale depending on the nature of the food product : from A to E, with a minimum of -1 to 0 for A and a maximum for producted scoring over 19.
+
+.center[
+![](./img/nutriscore_grading.png)
+]
+
+---
+
+### The Nutri-Score : rising
+
+.pull-left[
+In 2020, [a poll paid for by Santé Publique France](https://www.santepubliquefrance.fr/determinants-de-sante/nutrition-et-activite-physique/documents/enquetes-etudes/nutri-score-evolution-de-sa-notoriete-sa-perception-et-son-impact-sur-les-comportements-d-achat-declares-entre-2018-et-2020) noted the popularity of the Nutri-Score :
+
+* 93% of the people surveyed knew of the Nutri-Score ;
+* 90% identify it as a tool to assess nutritious facts about food products ;
+* 18% spontaniously declare to use it for their food choices ;
+* 89% consider Nutri-Score display on food products should be mandatory.]
+
+
+.pull-right[
+This popularity was syngergised by the release of a phone app allowing consumers to display a meta nutrition score (in which the Nutri-Score accounts for 60% of the grade) by scanning barcodes : **[Yuka](https://yuka.io/)**.
+
+![](./img/yuka.png)
+]
+
+
+---
 
 class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) & [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop), [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & [clement@datactivist.coop](mailto:clement@datactivist.coop)

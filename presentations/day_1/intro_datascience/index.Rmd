@@ -67,6 +67,66 @@ layout: true
   background-color: #e95459;
 }
 
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
 </style>
 
 
@@ -91,14 +151,121 @@ All Datactivist productions are freely usable under the terms of [Creative Commo
 
 ---
 
-background-image: url(https://media.giphy.com/media/ZvkHeRqClNgUE/giphy-downsized-large.gif)
-class: inverse, center, top
+
+class: center, top
+
+## After this bootcamp, you may want to escape data science
+
+.center[
+![](https://media.giphy.com/media/Zxzr2pp6qU64g/giphy.gif?cid=ecf05e477juoqe125eb3jzgxt06xr20mxv9ucjt3uehfhm4r&rid=giphy.gif&ct=g)
+]
+
+## for good ...
 
 
-# This presentation is under construction
+---
 
-.footnote[Please come back on August, 22nd<br>for release.]
+background-image: url(https://media.giphy.com/media/13ROLRgvNf5WQo/giphy.gif?cid=ecf05e4784jizw5cdsfi7b38uapop892fbhcsza9sh3y3iq6&rid=giphy.gif&ct=g)
+class: center, top
 
+
+## ... unfortunately for you, it will be hard to avoid it
+
+---
+
+
+
+background-image: url(https://media.giphy.com/media/xT9C25UNTwfZuk85WP/giphy-downsized-large.gif?cid=ecf05e471uzc5tuw52n0dslae0e6hksd2e0cqmqzm7jjcker&rid=giphy-downsized-large.gif&ct=g)
+class: center, top
+
+## Whatever path you choose,<br>you'll find data on your way
+
+---
+
+## as a policy maker
+
+.pull-left-wide[
+![](./img/ipcc_spm.png)
+]
+
+.pull-right-narrow[
+Sample from the [AR5 synthesis report on climate change 2014's](https://www.ipcc.ch/report/ar5/syr/) Summary for policy makers of the IPCC.
+]
+
+---
+
+## as a political representative
+
+.pull-left-wide[
+![](./img/bjp_party_data.png)
+]
+
+.pull-right-narrow[
+Example : [The New BJP: Modi and the Making of the World’s Largest Political Party review: Strategy, experiments, digital push: explaining the BJP’s rise](https://www.thehindu.com/books/books-reviews/the-new-bjp-modi-and-the-making-of-the-worlds-largest-political-party-review-strategy-experiments-digital-push-explaining-the-bjps-rise/article65092321.ece), The Hindu (2022)
+]
+
+---
+
+## as a public policy researcher
+
+Ex. : [Restrictions on data-driven political micro-targeting in Germany, Kruschinski, Simon; Haller, André (2021)](https://policyreview.info/articles/analysis/restrictions-data-driven-political-micro-targeting-germany).
+
+.center[
+![](./img/datadriven_campaigns_germany.png)
+]
+
+---
+
+## as a journalist
+
+.pull-left[
+**Sometimes data science makes the news**
+
+Ex. : [The Pegasus project](https://forbiddenstories.org/about-the-pegasus-project/).
+
+![](./img/pegasus.png)
+
+
+]
+
+
+.pull-right[
+**Sometimes data science is the news**
+
+Ex. : [NHS races to reach 50,000 Covid contacts missed in data blunder](https://www.theguardian.com/politics/2020/oct/05/ministers-accused-of-putting-lives-at-risk-with-covid-data-error), The Guardian (2021)
+
+![](./img/nhs_uk.png)
+
+
+]
+
+---
+
+## as a civil servant
+
+Example : fight against tax evasion in France ([BFM, 2022)](https://www.bfmtv.com/economie/patrimoine/impots-fiscalite/impots-comment-le-fisc-recourt-a-l-intelligence-artificielle-pour-lutter-contre-la-fraude_AN-202206220028.html).
+
+![](./img/fraud_detection.png)
+
+---
+
+## as a citizen
+
+Let's face it : you're socially made of data.
+
+.center[
+![](https://media.giphy.com/media/dIBLtolI6axTGIGopo/giphy.gif?cid=790b7611cc38e7cdfe931af73749559f1f6e6cd8b59cd51e&rid=giphy.gif&ct=g)
+]
+
+---
+
+class: inverse, center, middle
+
+## What do you think about it ?
+
+.center[
+![](./img/changemymind.png)
+]
 
 ---
 
@@ -107,4 +274,4 @@ class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop) & [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop), [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & [clement@datactivist.coop](mailto:clement@datactivist.coop)

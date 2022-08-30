@@ -30,12 +30,11 @@ Data science bootcamp at Sciences Po
 
 ### Morning
 
-* presentation : limits and controversis about the Nutriscore ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_3/nutriscore_limits))
 * workshop : Google colab [Data visualization](https://colab.research.google.com/drive/1nMbGt9yjoTTQ4pHkF7e0Yi-qVrkxR55f?usp=sharing)
 
 ### Afternoon
 
-* presentation : completary labels for a balanced data diet ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_3/alternative_indicators))
+* workshop : contributing to OpenFoodFacts to uncover the *"prodocution side"* of data.
 * workshop : Google colab (continued) + [project](https://colab.research.google.com/drive/1je-8IMkHaNBVbVklhen_rDgetaGT_L_H?usp=sharing)
 
 ## Bonus
