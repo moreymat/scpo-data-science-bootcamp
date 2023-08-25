@@ -1,0 +1,136 @@
+---
+title: "Data Science Bootcamp<br>*Day 2 : Part 1*"
+subtitle: "Meet : the Nutriscore"
+author: "Mathieu Morey & Sylvain Lapoix"
+date: "August, 23rd 2022"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+params:
+  event: Data Science Bootcamp
+  slug: scpo-data-science-bootcamp
+  session: day_2
+  module: nutriscore
+---
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
+</style>
+
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span></div>")` 
+
+
+---
+
+class: center, middle
+
+This presentation is available at : `r paste0("https://moreymat.github.io/", params$slug, "/presentations/", params$session, "/", params$module)`
+
+Sources : `r paste0("https://github.com/moreymat/", params$slug, "/presentations/", params$session, "/", params$module)`
+
+
+Those productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+
+<BR>
+<BR>
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+---
+
+class: inverse, center, middle
+
+# Questions ?
+
+Contact : [mathieu.morey@gmail.com](mailto:mathieu.morey@gmail.com) & [sylvainlapoix@protonmail.com](mailto:sylvainlapoix@protonmail.com)

@@ -3,29 +3,11 @@
   <head>
     <title>Data Science Bootcamp Day 1 : Part 1</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Mathieu Morey, Sylvain Lapoix &amp;  Clément Mandron, Datactivist" />
-    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <meta name="author" content="Mathieu Morey &amp; Sylvain Lapoix" />
+    <script src="libs/header-attrs-2.24/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
-    <meta name="description" content="Data Science Bootcamp"/>
-    <meta name="github-repo" content="datactivist/scpo-data-science-bootcamp"/>
-    <meta name="twitter:description" content="Data Science Bootcamp"/>
-    <meta name="twitter:url" content="https://datactivist.coop/scpo-data-science-bootcamp"/>
-    <meta name="twitter:image" content="https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png"/>
-    <meta name="twitter:image:alt" content="Datactivist logo"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:creator" content="@datactivi_st"/>
-    <meta name="twitter:site" content="@datactivi_st"/>
-    <meta property="og:description" content="Data Science Bootcamp"/>
-    <meta property="og:url" content="https://datactivist.coop/scpo-data-science-bootcamp"/>
-    <meta property="og:image" content="https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png"/>
-    <meta property="og:image:alt" content="Datactivist logo"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:locale" content="fr_FR"/>
-    <meta property="og:site_name" content="Datactivist"/>
-    <meta property="article:author" content="Datactivist"/>
   </head>
   <body>
     <textarea id="source">
@@ -33,12 +15,10 @@ class: center, middle, inverse, title-slide
 
 # Data Science Bootcamp<br><em>Day 1 : Part 1</em>
 ## what is this class all about ?
-### Mathieu Morey, Sylvain Lapoix &amp;<br> Clément Mandron, Datactivist
-### August, 22nd 2022
+### Mathieu Morey &amp; Sylvain Lapoix
+### August, 29st 2023
 
 ---
-
-
 
 
 layout: true
@@ -62,31 +42,88 @@ layout: true
   background-color: #e95459;
 }
 
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
 &lt;/style&gt;
 
 
-&lt;div class='my-footer'&gt;&lt;span&gt;Data Science Bootcamp&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;a href='https://datactivist.coop/'&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/a&gt;&lt;/div&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+&lt;div class='my-footer'&gt;&lt;span&gt;Data Science Bootcamp&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
 
 class: center, middle
 
-This presentation is available at : http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_1/intro_class
+This presentation is available at : https://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_1/intro_class
 
-Sources : https://github.com/datactivist/scpo-data-science-bootcamp/presentations/day_1/intro_class
+Sources : https://github.com/moreymat/scpo-data-science-bootcamp/presentations/day_1/intro_class
 
 
-All Datactivist productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+Those productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
 
 &lt;BR&gt;
 &lt;BR&gt;
 
 ![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
-
-???
-
-test comment
 
 ---
 
@@ -330,8 +367,8 @@ Two new acts part of the .red[European Data Strategy (2020)] :
 .center[&lt;img src="https://media.giphy.com/media/JrYnKirK79252t3wDs/giphy.gif"/&gt;]
 
 ---
-class: middle
 
+class: middle
 
 .pull-left[
 
@@ -341,14 +378,11 @@ class: middle
 - 12:40 - group correction - 20 min
 
 - 1:00 - **lunch break** - 60 min (please come back at 2:00 !)
-- after lunch breah - 20 min presentation by Syvlain
+- after lunch break - 20 min presentation by Sylvain
 
 - 3:25 - break 2 - 15 min (please come back at 3:40 !)
 - 4:35 - break 3 - 15 min (please come back at 4:50 !)
-
-<<<<<<< HEAD
-=======
-- 5:20 - group correction and quizz day 1
+- 5:20 - group correction and quiz day 1
 
 ]
 
@@ -367,14 +401,13 @@ class: middle
 
 ]
 
->>>>>>> 53df179f39229b3854e9506ced0d3ff5a2de62b3
 ---
 
 class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop), [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) &amp; [clement@datactivist.coop](mailto:clement@datactivist.coop)
+Contact : [mathieu.morey@gmail.com](mailto:mathieu.morey@gmail.com) &amp; [sylvainlapoix@protonmail.com](mailto:sylvainlapoix@protonmail.com)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

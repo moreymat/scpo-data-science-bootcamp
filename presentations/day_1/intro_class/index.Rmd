@@ -1,8 +1,8 @@
 ---
 title: "Data Science Bootcamp<br>*Day 1 : Part 1*"
 subtitle: "what is this class all about ?"
-author: "Mathieu Morey, Sylvain Lapoix &<br> Clément Mandron, Datactivist"
-date: "August, 22nd 2022"
+author: "Mathieu Morey & Sylvain Lapoix"
+date: "August, 29st 2023"
 output:
   SlidesDatactivist::moon_reader:
     css: [default, datactivist, datactivist-fonts]
@@ -22,29 +22,8 @@ params:
   slug: scpo-data-science-bootcamp
   session: day_1
   module: intro_class
-  image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
-  image_alt: Datactivist logo
+
 ---
-
-```{r, echo=FALSE}
-library(metathis)
-meta() %>% 
-  meta_description(params$event) %>% 
-  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
-  meta_viewport() %>% 
-  meta_social(
-    title = params$title,
-    url = paste0("https://datactivist.coop/", params$slug),
-    image = params$image,
-    image_alt = params$image_alt,
-    og_type = "website",
-    og_author = "Datactivist",
-    og_locale = "fr_FR",
-    og_site_name = "Datactivist",
-    twitter_card_type = "summary",
-    twitter_creator = "@datactivi_st")
-
-```
 
 layout: true
 
@@ -67,31 +46,88 @@ layout: true
   background-color: #e95459;
 }
 
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
 </style>
 
 
-`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href='https://datactivist.coop/'><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")` 
+`r paste0("<div class='my-footer'><span>", params$event, "</span></div>")` 
 
 
 ---
 
 class: center, middle
 
-This presentation is available at : `r paste0("http://datactivist.coop/", params$slug, "/presentations/", params$session, "/", params$module)`
+This presentation is available at : `r paste0("https://moreymat.github.io/", params$slug, "/presentations/", params$session, "/", params$module)`
 
-Sources : `r paste0("https://github.com/datactivist/", params$slug, "/presentations/", params$session, "/", params$module)`
+Sources : `r paste0("https://github.com/moreymat/", params$slug, "/presentations/", params$session, "/", params$module)`
 
 
-All Datactivist productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+Those productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
 
 <BR>
 <BR>
 
 ![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
-
-???
-
-test comment
 
 ---
 
@@ -335,8 +371,8 @@ Two new acts part of the .red[European Data Strategy (2020)] :
 .center[<img src="https://media.giphy.com/media/JrYnKirK79252t3wDs/giphy.gif"/>]
 
 ---
-class: middle
 
+class: middle
 
 .pull-left[
 
@@ -346,14 +382,11 @@ class: middle
 - 12:40 - group correction - 20 min
 
 - 1:00 - **lunch break** - 60 min (please come back at 2:00 !)
-- after lunch breah - 20 min presentation by Syvlain
+- after lunch break - 20 min presentation by Sylvain
 
 - 3:25 - break 2 - 15 min (please come back at 3:40 !)
 - 4:35 - break 3 - 15 min (please come back at 4:50 !)
-
-<<<<<<< HEAD
-=======
-- 5:20 - group correction and quizz day 1
+- 5:20 - group correction and quiz day 1
 
 ]
 
@@ -372,11 +405,10 @@ class: middle
 
 ]
 
->>>>>>> 53df179f39229b3854e9506ced0d3ff5a2de62b3
 ---
 
 class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop), [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & [clement@datactivist.coop](mailto:clement@datactivist.coop)
+Contact : [mathieu.morey@gmail.com](mailto:mathieu.morey@gmail.com) & [sylvainlapoix@protonmail.com](mailto:sylvainlapoix@protonmail.com)

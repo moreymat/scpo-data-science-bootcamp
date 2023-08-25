@@ -1,8 +1,8 @@
 ---
 title: "Data Science Bootcamp<br>*Day 1 : Part 2*"
 subtitle: "why you should get interested in data science"
-author: "Mathieu Morey, Sylvain Lapoix &<br> Clément Mandron, Datactivist"
-date: "August, 22nd 2022"
+author: "Mathieu Morey & Sylvain Lapoix"
+date: "August, 29st 2023"
 output:
   SlidesDatactivist::moon_reader:
     css: [default, datactivist, datactivist-fonts]
@@ -22,30 +22,9 @@ params:
   slug: scpo-data-science-bootcamp
   session: day_1
   module: intro_datascience
-  image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
-  image_alt: Datactivist logo
+
+
 ---
-
-```{r, echo=FALSE}
-library(metathis)
-meta() %>% 
-  meta_description(params$event) %>% 
-  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
-  meta_viewport() %>% 
-  meta_social(
-    title = params$title,
-    url = paste0("https://datactivist.coop/", params$slug),
-    image = params$image,
-    image_alt = params$image_alt,
-    og_type = "website",
-    og_author = "Datactivist",
-    og_locale = "fr_FR",
-    og_site_name = "Datactivist",
-    twitter_card_type = "summary",
-    twitter_creator = "@datactivi_st")
-
-```
-
 layout: true
 
 <style>
@@ -127,22 +106,23 @@ layout: true
   float: left;
 }
 
+
 </style>
 
 
-`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href='https://datactivist.coop/'><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")` 
+`r paste0("<div class='my-footer'><span>", params$event, "</span></div>")` 
 
 
 ---
 
 class: center, middle
 
-This presentation is available at : `r paste0("http://datactivist.coop/", params$slug, "/presentations/", params$session, "/", params$module)`
+This presentation is available at : `r paste0("https://moreymat.github.io/", params$slug, "/presentations/", params$session, "/", params$module)`
 
-Sources : `r paste0("https://github.com/datactivist/", params$slug, "/presentations/", params$session, "/", params$module)`
+Sources : `r paste0("https://github.com/moreymat/", params$slug, "/presentations/", params$session, "/", params$module)`
 
 
-All Datactivist productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+Those productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
 
 <BR>
 <BR>
@@ -269,9 +249,8 @@ class: inverse, center, middle
 
 ---
 
-
 class: inverse, center, middle
 
 # Questions ?
 
-Contact : [mathieu@datactivist.coop](mailto:mathieu@datactivist.coop), [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop) & [clement@datactivist.coop](mailto:clement@datactivist.coop)
+Contact : [mathieu.morey@gmail.com](mailto:mathieu.morey@gmail.com) & [sylvainlapoix@protonmail.com](mailto:sylvainlapoix@protonmail.com)
