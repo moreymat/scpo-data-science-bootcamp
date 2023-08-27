@@ -2,31 +2,31 @@
 
 Data science bootcamp at Sciences Po
 
-## Day 1 - August 22nd
+## Day 1 - August 28th
 
 ### Morning
 
-* presentation : what is this class all about ? ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_1/intro_class))
+* presentation : what is this class all about ? ([slides](http://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_1/intro_class))
 * workshop : Google colab [Python basics](https://colab.research.google.com/drive/1oEOzlLYryxl2RFCSN0YdXZ-bEdtCwmEc?usp=sharing)
 
 ### Afternoon
 
-* presentation : why you should get interested in data science ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_1/intro_datascience))
+* presentation : why you should get interested in data science ([slides](http://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_1/intro_datascience))
 * workshop : Google colab (continued)
 
-## Day 2 - August 23rd
+## Day 2 - August 29th
 
 ### Morning
 
-* presentation : meet the Nutriscore ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_2/nutriscore))
+* presentation : meet the Nutriscore ([slides](http://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_2/nutriscore))
 * workshop : Google colab [Tabular data analysis 1 : Loading Open Food Facts data with pandas](https://colab.research.google.com/drive/1VNcTbNF0Jq0TOX173yEIlfb3hz9kxawg?usp=sharing)
 
 ### Afternoon
 
-* presentation : Open Food Facts, a common for nutrition ([slides](http://datactivist.coop/scpo-data-science-bootcamp/presentations/day_2/off))
+* presentation : Open Food Facts, a common for nutrition ([slides](http://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_2/off))
 * workshop : Google colab (continued)
 
-## Day 3 - August 24th
+## Day 3 - August 30th
 
 ### Morning
 
