@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Data Science Bootcamp Day 1</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mathieu Morey &amp; Sylvain Lapoix" />
+    <script src="libs/header-attrs-2.27/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Science Bootcamp<br><em>Day 1</em>
+### Mathieu Morey &amp; Sylvain Lapoix
+### August, 26th 2024
+
+---
+
+
+layout: true
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
+&lt;/style&gt;
+
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Data Science Bootcamp&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+class: center, middle
+
+This presentation is available at : https://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_1
+
+Sources : https://github.com/moreymat/scpo-data-science-bootcamp/presentations/day_1
+
+
+Those productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+---
+
+# Disclaimer : our moto
+
+&gt; There are no silly questions.
+
+--
+
+&gt; There are only awkward silences.
+
+---
+
+background-image: url(https://media.giphy.com/media/d1E1kn94NNfrlPGw/source.gif)
+class: inverse, center, top
+
+
+# What is this class ?
+
+---
+
+### The objectives
+
+* understanding what Python is ;
+* understanding what a notebook is and learning how to use it ;
+* understanding what data science is ;
+* learning how to perform basic data exploration ;
+* learning how to answer questions with a dataset.
+
+---
+
+### The teachers
+
+.pull-left[
+.center[**Mathieu Morey**]
+
+.center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/03_mathieu.png)]
+
+Machine learning engineer @Corcentric, previously researcher ; consultant / data analyst / data scientist
+
+Based in Marseille ⚽
+
+Works on invoice extraction, machine learning and natural language processing.
+
+]
+
+.pull-right[
+.center[**Sylvain Lapoix**]
+
+.center[![](https://raw.githubusercontent.com/datactivist/datactivist-website/master/hugo/static/uploads/02_sylvain.png)]
+
+Datajournalist and trainer, former consultant / data analyst
+
+Based in La Rochelle 🏉
+
+Works for digital and print media on ecological, agricultural and social topics.
+
+]
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRkMmY4YWpkd3dwNW02Y3BtcDhoOXdsbWJteWZ3MmVja3Q1aTg0biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2LNVExEP0z9CrS/giphy.gif)
+class: inverse, center, top
+
+# Introducing ourselves (in data)
+
+---
+
+## Let's get to know each other (with variables)
+
+Each of you is expected to introduce one's self using the same five items :
+
+
+.pull-left[
+
+1. first name ;
+2. study field of the last diploma ;
+3. country of origin ;
+4. height in cm.
+
+Please respect the units...
+]
+
+--
+
+.pull-right[
+
+**.red[No exceptions allowed !]**
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2J2bTgwbTYzbXNwd251eTVvZHR3ZHU0cWVsNzkxZHc3OXlvMmRiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGcAx3wr7jszFfpe/giphy.gif)
+
+]
+
+---
+
+## And so, here is a database
+
+---
+
+## No prerequisite for this class !
+
+---
+
+### If you get stuck ... please proceed as followed
+
+.pull-left[
+1. Read the notebook and read your code ;
+2. Look the documentation up (you'll have plenty) ;
+3. Ask your buddy ;
+4. Ask a teacher as a last resort.
+]
+
+.pull-right[
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExenYxa3hxaWJoYzkzOHJyY3hjNjlxYndudHptZmFybGNoYzM4MnVxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BX2oBnOiZkgDiJ1dah/giphy.gif)
+]
+
+--
+
+But, who is my buddy ?
+
+---
+
+## So let's use ouf database !
+
+We're going to randomly assign you one buddy to work with during this workshop :
+
+* they'll be your backup in case of difficulty ;
+* you're going to be a team for the project work assigned tomorrow afternoon.
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjZqbmpoeTVpbm4xanpkODR5M3F1OHVmbzY1dXR5cTZpMDM2dGxsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9C25UNTwfZuk85WP/giphy.gif)
+class: inverse, center, top
+
+# Coding in the real :&lt;/br&gt;why producing data ?
+
+---
+
+## Have you heard of the "mégabassines" ?
+
+![](https://media.sudouest.fr/14583832/1000x500/20221217143024-1712222dji821.jpg?v=1679918127)
+
+---
+
+## The project of the surface tanks
+
+.pull-left[
+The logic :
+
+* the cooperative pumps water in surface tanks during high-water season (Winter) ;
+* redistributes it during dry / crop irrigation season (Summer) ;
+* hence lowering pumping in water stocks during Summer.
+
+**Outcome** : less water drawn from the environment.
+]
+
+--
+
+.pull-right[
+The underlying data :
+
+* flow rate in surface waters and stock in groundwater tables ;
+* water volumes pumped into the tank systems ;
+* water volumes distributed from the surface tanks ;
+* water volumes drawn from the water sheds.
+
+]
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnV5dDNsaGFjZWtucjBpcDB5OXI0cG9keng5MzV1NG95bnNhOWU5cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GbH8vRmrNHdVZhouBt/giphy.gif)
+class: inverse, center, top
+
+### That's the theory ...
+
+---
+
+### In practice : environmental NGOs brought the case to court
+
+.pull-left[
+![](../img/lettre_ong_donnees_bassines.png)
+]
+
+.pull-right[
+![](../img/decision_ta_bdx_bassines.png)
+]
+
+---
+
+## Underlying question : water, what for ?
+
+.center[
+![](https://www.lanouvellerepublique.fr/deux-sevres/environnement/reserves-d-eau/deux-sevres-la-bassine-de-mauze-sur-le-mignon-sera-entierement-remplie-fin-mars#!)
+]
+
+Source : [La Nouvelle République, 20220203](https://www.lanouvellerepublique.fr/deux-sevres/environnement/reserves-d-eau/deux-sevres-la-bassine-de-mauze-sur-le-mignon-sera-entierement-remplie-fin-mars#!).
+
+---
+
+### Public position
+
+.center[
+![](../img/bassines_eleveurs_nrc.png)
+]
+
+Source : [La Nouvelle République, 20230310](https://www.lanouvellerepublique.fr/deux-sevres/commune/sainte-soline/bassines-des-deux-sevres-ce-qu-ils-attendent-de-la-sev15-de-sainte-soline#!).
+
+---
+
+### A true mess
+
+.center[
+![](../img/rpg_mauze.png)
+]
+
+---
+
+### Investigating to figure out the data
+
+.center[
+![](../img/arrete_interpref_substitution.png)
+]
+
+
+---
+
+### Producing the missing data
+
+Source : [Reporterre, 20240117](https://reporterre.net/Profits-export-et-grandes-cultures-les-vraies-raisons-des-megabassines).
+
+.center[
+![](../img/reporterre_resultat_bassines.png)
+]
+
+---
+
+background-image: url(https://media.giphy.com/media/JrYnKirK79252t3wDs/giphy.gif)
+class: inverse, center, top
+
+# Let's dive into it !
+
+
+---
+
+### Our program
+
+.pull-left[
+
+**Day 1**
+
+- 14:00 - introduction
+- 15:15 - break 1 (15' tops)
+- 17:20 - group correction and quiz day 2
+
+
+**Day 2**
+
+- 10:00 - presentation ;
+- 10:30 - back to work ;
+- 11:15 - break 1 (15' tops)
+- 13:00 - **lunch break** - 60 min
+- 14:00 - presentation
+- 15:25 - break 2 (15' tops)
+- 16:35 - break 3 (15' tops)
+- 17:20 - group correction and quiz day 2
+
+]
+
+.pull-right[
+
+**Day 3**
+
+- 09:00 - guest presentation ;
+- 10:00 - back to work ;
+- 11:15 - break 1 (15' tops)
+- 12:40 - group correction - 20 min
+- 13:00 - **lunch break** - 60 min
+- 15:20 - group correction and quiz day 3
+
+**Day 4**
+
+- 09:00 - project rules recap ;
+- 09:15 - project work ;
+- 11:15 - break 1 (15' tops)
+- 11:00 - project's presentations ;
+- 12:15 - final quizz and debrief ;
+- 13:00 - bye bye !
+
+]
+
+---
+
+.pull-right[
+**The Github repo will be your house for this bootcamp**. Link : https://github.com/moreymat/scpo-data-science-bootcamp
+
+1- Follow the link of the Google Colab notebook
+
+&lt;img src="./img/github.png" height="100"/&gt;
+
+2- Save a copy of the notebook in your own Google Drive storage
+
+&lt;img src="./img/colab.png" height="150"/&gt;
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjFva3h6enZ0cTNjMmI2cjJ5c3VneWlwcTlveDZ6Nndoc2lsMGIyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/scZPhLqaVOM1qG4lT9/giphy.gif)
+class: inverse, center, top
+
+
+# Now let's code
+
+
+---
+
+class: inverse, center, middle
+
+# Questions ?
+
+Contact : [mathieu.morey@gmail.com](mailto:mathieu.morey@gmail.com) &amp; [sylvainlapoix@protonmail.com](mailto:sylvainlapoix@protonmail.com)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="matomo.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

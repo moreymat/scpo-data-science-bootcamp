@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Data Science Bootcamp Day 2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mathieu Morey &amp; Sylvain Lapoix" />
+    <script src="libs/header-attrs-2.27/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Science Bootcamp<br><em>Day 2</em>
+### Mathieu Morey &amp; Sylvain Lapoix
+### August, 27th 2024
+
+---
+
+
+layout: true
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+
+.yellow-h{
+   background: #ffff88;
+}
+
+.blue-h{
+   background: #83c7fc;
+}
+
+.white-bg{
+   background: #ffffff;
+}
+
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.redred {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.orange {
+  color: #ffa500;
+
+}
+
+.quote {
+  font-family: 'Rokkitt';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+.pull-left-wide {
+  width: 65%;
+  float: left;
+}
+
+.pull-right-wide {
+  width: 65%;
+  float: right;
+}
+
+.pull-right-narrow {
+  width: 30%;
+  float: right;
+}
+
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+
+
+&lt;/style&gt;
+
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Data Science Bootcamp&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+class: center, middle
+
+This presentation is available at : https://moreymat.github.io/scpo-data-science-bootcamp/presentations/day_2
+
+Sources : https://github.com/moreymat/scpo-data-science-bootcamp/presentations/day_2
+
+Those productions are freely usable under the terms of [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr) licence.
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+---
+
+## Today's program
+
+- 10:00 - presentation ;
+- 10:30 - back to work ;
+- 11:15 - break 1 (15' tops)
+- 13:00 - **lunch break** - 60 min
+- 14:00 - presentation
+- 15:25 - break 2 (15' tops)
+- 16:35 - break 3 (15' tops)
+- 17:20 - group correction and quiz day 2
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2xsb3N1eG8wdDVhZG41bzB0MzZmNDU0bWlya2Q0bXg3emJxZGhidSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4RKhOL0xiBdbgglFi/giphy.gif)
+class: inverse, center, top
+
+
+# Coding in the real :&lt;/br&gt;data is here, but ...
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3B1NDZ6aDlhcTJiYmpvcWhhZXRhbzRoOHBwZWVjMmRrZm1wMW5wcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oAbvMXvah1M0U/giphy.gif)
+class: inverse, center, top
+
+## Air quality connundrum
+
+---
+
+### What is a pollutant ?
+
+.pull-left[
+Some must remain in restricted amount in the air :
+
+* NO2 ;
+* PM ;
+* O3 ;
+* etc.
+
+Source : [Airparif](https://www.airparif.fr/surveiller-la-pollution/les-polluants-surveilles).
+]
+
+.pull-right[
+![](../img/aiparif_polluant_reglementes.png)
+]
+
+---
+
+### Certified producers
+
+![](../img/atmo_reseau.png)
+
+---
+
+### Policies are connected to this
+
+.center[
+![](../img/francebleu_voiessurberge_qualitedelair.png)
+]
+
+---
+
+### A publication raised awarness ...
+
+.pull-left[
+![](../img/aup_publicssensibles_air.png)
+]
+
+--
+
+.pull-right[
+This raised awarness, especially :
+
+![](../img/aup_publicssensibles_air_details.png)
+]
+
+---
+
+### Data is available (kind of)
+
+[Airparif air quality map](https://www.airparif.fr/surveiller-la-pollution/bilans-et-cartes-annuels-de-pollution).
+
+![](../img/airparif_carte.png)
+
+---
+
+## We were commissionned ...
+
+.center[
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NzMXA1dmhkNG5namk5dWIxeDlkODgwMHdnZDBmMDV2NmlqNGZxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKC6UT5m2rywASs/giphy.gif)
+]
+
+---
+
+### First : get the location of relevant places
+
+... with open data
+
+.center[
+![](../img/AirparifEcolesDev.png)
+]
+
+
+---
+
+### Then, we looked for the official air quality data
+
+Source : [Airparif, Open data on ArcGIS](https://data-airparif-asso.opendata.arcgis.com/maps/6e69948502254bfcb6497f66b8cf1a43/explore)
+
+![](../img/airparif_opendata.png)
+--
+
+What can you do about it ?
+
+---
+
+### Then, we asked politely ... more or less
+
+.center[
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWlxODZjdDRybDBjOGU2YXpyb2dsemhheTJiZWhranJ6bTVyazZjMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2599kjzl9M5anzPSbh/giphy.gif)
+]
+
+---
+
+### Then, we mapped it
+
+.pull-left[
+![](../img/general2017.png)
+]
+
+.pull-right[
+![](../img/top2017.png)
+]
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2QzbHNwY2pzbWtvYmhxaGNtcXV1MWxsM2EweTZyYXFlYnlkdXEzdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMDXc3ZhBFESPAc/giphy.gif)
+class: inverse, center, top
+
+## Outcomes
+
+---
+
+### Political reactions
+
+.center[
+![](../img/respire_reaction_hidalgo.png)
+]
+
+
+---
+
+### Citizen awarness
+
+.pull-left[
+Source : [Respire](https://respire-asso.org/en-2024-encore-10-ecoles-mobilisees-contre-la-pollution-de-lair-a-bagnolet-93-montreuil-93-colombes-92-et-paris-75/)
+
+![](../img/respire_ecoles_mobilisees.png)
+]
+
+.pull-right[
+![](../img/respire_larueestanous.webp)
+]
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRwbHdhcDFlbTJtNGM1a3UxeTQzNDh2MWoydm56dG01ZWlrNW1scCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kx7HO28xRu1cG8S3GB/giphy.gif)
+class: inverse, center, top
+
+## Limits
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjZ2azdmdzJ6eTBkcjMzdnpmdGh2amZiNXBrZjZ2MDI4ZWNwdXBoZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif)
+class: inverse, center, top
+
+
+# Back to your notebooks !
+
+---
+
+background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGJub2EzMW55MDhkNmYwY2k2OXNiOGI0dG5jd2sxMWxreTRlZ2Z5MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uurtMtTKqkJda4dk8Y/giphy-downsized-large.gif)
+class: inverse, center, top
+
+
+# Coding time !
+
+---
+
+
+class: inverse, center, middle
+
+# Questions ?
+
+Contact : [mathieu.morey@gmail.com](mailto:mathieu.morey@gmail.com) &amp; [sylvainlapoix@protonmail.com](mailto:sylvainlapoix@protonmail.com)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="matomo.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
