@@ -12,7 +12,7 @@ Data science bootcamp at Sciences Po
 * [nb3_pandas_overview](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/3_pandas_overview.ipynb)
 * [nb4_pandas_basics](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/4_pandas_basics.ipynb)
 
-## Day 3 - August 28th
+## Day 3 - August 27th
 
 * [nb5_dataviz](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/5_dataviz.ipynb)
 
