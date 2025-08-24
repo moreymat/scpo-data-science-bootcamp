@@ -10,7 +10,7 @@ Data science bootcamp at Sciences Po
 ## Day 2 - August 26th
 
 * [Tabular data analysis 1 : Exploring Open Food Facts data with pandas](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/3_pandas_overview.ipynb)
-* [Tabular Data Analysis 2: Basic operations in pandas](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/4_pandas_basics.ipynb)
+* (optional) [Tabular Data Analysis 2: Basic operations in pandas](https://github.com/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/4_pandas_basics.ipynb)
 
 ## Day 3 - August 27th
 
