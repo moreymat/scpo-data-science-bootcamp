@@ -134,3 +134,8 @@ dmypy.json
 .RData
 .Ruserdata
 *.Rproj
+# pixi environments
+.pixi
+*.egg-info
+
+/.quarto/

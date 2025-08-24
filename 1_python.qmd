@@ -1,0 +1,1114 @@
+---
+title: Python Basics
+format: ipynb
+jupyter: python3
+---
+
+<a href="https://colab.research.google.com/github/moreymat/scpo-data-science-bootcamp/blob/main/notebooks/1_python.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+::: {.cell .markdown}
+Welcome to the "Data science bootcamp" in Python.
+
+In this notebook, the first in a series, you will see the basics of the Python programming language, a fundamental tool nowadays for data science, artificial intelligence and machine learning.
+:::
+
+::: {.cell .markdown}
+This notebook is mostly (and heavily) derived from the notebook [Python basics](https://colab.research.google.com/github/data-psl/lectures2020/blob/master/notebooks/01_python_basics.ipynb#scrollTo=clWaFCzBMfkv), authored by Mathieu Blondel for the [preparatory week of the transverse program for data sciences at Université PSL (Paris Sciences & Lettres)](https://data-psl.github.io/preparatory-week/).
+:::
+
+::: {.cell .markdown}
+## Preamble : Colaboratory and notebooks
+
+We are working on a platform, [Google Colaboratory](https://colab.research.google.com), that enables users to edit and run [Jupyter notebooks](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook) in the cloud for free, without any installation, and with access to GPUs.
+
+For a very short history and description of Colaboratory, see [on wikipedia](https://en.wikipedia.org/wiki/Project_Jupyter#Google_Colaboratory).
+:::
+
+::: {.cell .markdown}
+### Note on how to change the language on Google Colaboratory
+
+Google Colaboratory uses the default language settings from your web browser.
+If the menus are displayed in a different language, you can switch to English by going to (the equivalent of) the "Help" menu, then clicking on (the translation of) the item "Display in English".
+
+![Switch Colab to English](https://github.com/moreymat/scpo-data-science-bootcamp/raw/main/notebooks/img/colab-lang.png){width=400 fig-align="center"}
+
+Having the interface in English will ensure you can easily follow the instructions and advice in these notebooks.
+:::
+
+::: {.cell .markdown}
+### Using a notebook
+
+All our work will happen inside a *notebook*, an interactive document where you can write a mix of :
+
+* text formatted in [Markdown](https://guides.github.com/features/mastering-markdown/) that is rendered, and
+* code in [Python](https://www.python.org/) that can be executed.
+
+More precisely, a notebook consists in a sequence of *cells*, where each cell contains either (Markdown) text or (Python) code.
+
+Notebooks are not limited to text and code, they can render math equations, images, plain HTML content and even interactive widgets !
+But in this series of notebooks, we will mostly write text and code.
+
+You can double click on any text cell to edit it.
+
+By default, Colab shows you the Markdown text on the left and a preview of its rendering on the right that is updated (almost) in real time as you type.
+
+When you are done, just press "Shift+Enter" and the cell will be rendered.
+:::
+
+::: {.cell .markdown}
+### Markdown basics
+
+Markdown relies on characters, in particular the star `*` (or multiply).
+
+*Text between stars is in italic*, **text between pairs of stars is in bold**.
+
+A sequence of lines that start with a star is rendered as a list with bullets :
+
+* first item
+  - subitem for the first item
+* second item
+* third item
+
+Lines that start with one or more hash `#` are headings :
+
+* 1 hash `#` for level-1 headings (document title),
+* 2 hashes `##` for level-2 headings (section title),
+* 3 hashes `###` for level-3 headings (subsection title).
+
+Links are defined by two elements : the text of the link between square brackets `[` and `]`, and the target of the link between parentheses.
+As an example, here is a link to the [Sciences-Po website](https://www.sciencespo.fr/en/home).
+:::
+
+::: {.cell .markdown}
+If you want to add a text (or code) cell after the cell you are currently editing, you can either :
+
+* click on the menu item "Insert" > "Text cell" (or "Code cell"), or
+* hover your mouse 1-2 mm below the bottom of the cell and click on one of the two buttons "+ Code" and "+ Text" that appear.
+
+![Add a cell](https://github.com/moreymat/scpo-data-science-bootcamp/raw/main/notebooks/img/colab-add-cell.png){width=400 fig-alt="center"}
+:::
+
+::: {.cell .markdown}
+If you forget the Markdown syntax for the most commonly used elements, the menu bar that appears at the top of a text cell (when you edit it) displays a familiar interface with clickable buttons.
+
+![Buttons for common Markdown elements](https://github.com/moreymat/scpo-data-science-bootcamp/raw/main/notebooks/img/colab-markdown-buttons.png){width=400 fig-align="center"}
+:::
+
+::: {.cell .markdown}
+A smaller bar appears on the upper right corner of the cell, with "up" and "down" arrows to move the cell up or down, a button to delete the cell, etc.
+
+![Cell buttons](https://github.com/moreymat/scpo-data-science-bootcamp/raw/main/notebooks/img/colab-cell-upper-right.png){width=200 fig-align="center"}
+:::
+
+There are many resources online to learn more about the Markdown syntax, eg. the [Markdown page on Wikipedia](https://en.wikipedia.org/wiki/Markdown) or this [short tutorial by GitHub](https://guides.github.com/features/mastering-markdown/).
+
+::: {.cell .markdown}
+**Exercise.** Add a text cell below this one, and write a very short text with the following constraints :
+
+* the text consists of 3 sections,
+* each section consists of 2 subsections,
+* one subsection must contain a bullet list,
+* another subsection must contain a numbered list,
+* another subsection must contain a two-level bullet list, where two items have at least 3 sub-items each.
+
+Any text will do, so feel free to write nonsensical text if you feel uninspired, or reuse some common placeholder text such as [Lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum).
+:::
+
+::: {.content-visible when-profile="answers"}
+::: {.cell .markdown}
+**Solution.**
+
+# Lorem ipsum
+
+## Section 1
+
+### Subsection 1.1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+### Subsection 1.2
+
+* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+* Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Section 2
+
+### Subsection 2.1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Subsection 2.2
+
+1. Ut enim ad minim veniam,
+2. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+4. Excepteur sint occaecat cupidatat non proident,
+5. sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Section 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+### Subsection 3.1
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+### Subsection 3.2
+
+* Lorem ipsum dolor sit amet,
+  - consectetur adipiscing elit,
+  - sed do eiusmod tempor incididunt ut labore et
+  - dolore magna aliqua.
+* Ut enim ad minim veniam,
+  - quis nostrud exercitation ullamco laboris nisi
+  - ut aliquip ex ea commodo consequat.
+  - Duis aute irure dolor in reprehenderit in voluptate velit esse
+  - cillum dolore eu fugiat nulla pariatur.
+* Excepteur sint occaecat cupidatat non proident,
+  - sunt in culpa qui officia deserunt
+  - mollit anim id est laborum.
+:::
+:::
+
+::: {.cell .markdown}
+### Python in the notebook
+
+Notebooks can contain code cells, that you can edit, like you do for text cells, but writing Python syntax instead of Markdown, and execute.
+
+A code cell contains one or more Python instructions.
+
+For example, here is a code cell that computes the number of seconds in a day (`24 * 60 * 60`), stores the result in a variable (`seconds_in_a_day`) and prints its value:
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+seconds_in_a_day = 24 * 60 * 60
+print(seconds_in_a_day)
+```
+
+::: {.cell .markdown}
+Click on the "play" button on the left of the cell to execute it.
+You should be able to see the result.
+
+Alternatively, you can also execute the cell by pressing "Ctrl+Enter" if you are on Windows or Linux, "Command+Enter" if you are on a Mac.
+:::
+
+::: {.cell .markdown}
+In notebooks, another way to display the value of a variable is just to type its name.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+seconds_in_a_day
+```
+
+::: {.cell .markdown}
+Variables that you defined in one cell can later be used in other cells, be it to display their value as we just did, or to use their value in a computation:
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+seconds_in_a_week = 7 * seconds_in_a_day
+seconds_in_a_week
+```
+
+::: {.cell .markdown}
+Note that the order of execution is important.
+For instance, had we not run the cell that computes and stores `seconds_in_a_day` beforehand, executing the above cell would have raised an error, as it depends on this variable.
+
+To make sure that you run all the cells in the correct order, the easiest option is to click on "Runtime" in the top-level menu, then on the "Run all" item.
+:::
+
+::: {.cell .markdown}
+If you want to display the value of more than one variable, you need to use `print`.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+print(seconds_in_a_day)
+print(seconds_in_a_week)
+```
+
+::: {.cell .markdown}
+You cannot achieve the same effect by just typing the two variable names on separate lines, because the notebook only displays the value of the last instruction:
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+seconds_in_a_day
+seconds_in_a_week
+```
+
+::: {.cell .markdown}
+**Exercise.** Add a Code cell below this cell. In the new cell, compute the number of seconds in a [common year](https://en.wikipedia.org/wiki/Common_year) by reusing the variable `seconds_in_a_day` and print it. Run the new cell.
+:::
+
+::: {.content-visible when-profile="answers"}
+::: {.cell .markdown}
+**Solution.**
+:::
+
+```{python}
+seconds_in_a_year = 365 * seconds_in_a_day
+print(seconds_in_a_year)
+```
+:::
+
+::: {.cell .markdown}
+## Python
+
+Let us start with basic notions of the Python programming language.
+:::
+
+::: {.cell .markdown}
+
+### Numbers and arithmetic operations
+
+Python enables to manipulate numeric values of various types :
+* [integers](https://en.wikipedia.org/wiki/Integer_(computer_science)) (`int`),
+* [booleans](https://en.wikipedia.org/wiki/Boolean_data_type) (`bool`),
+* [real numbers](https://en.wikipedia.org/wiki/Floating-point_arithmetic) (`float`),
+* [complex numbers](https://en.wikipedia.org/wiki/Complex_data_type) (`complex`),
+
+On these numeric values, Python supports the usual arithmetic operators :
+
+* `+` (addition),
+* `*` (multiplication),
+* `/` (division),
+* `**` (power),
+* `//` (integer division ; see [Wikipedia](https://en.wikipedia.org/wiki/Division_(mathematics)#Of_integers), item numbered 5).
+
+In general, you do not need to explicitly state the type of a numeric value because Python guesses from the writing.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+# (a line starting with a hash '#' in Python is a comment, it is not interpreted)
+# let us declare an integer
+x = 1
+# and display its value, just by calling its name
+x
+```
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+# let us declare a float
+y = 3.2
+# and display its value
+y
+```
+
+::: {.cell .markdown}
+
+If you sum an integer and a real number, Python will automatically convert the integer to a float before doing the computation.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+z = x + y
+z
+```
+
+::: {.cell .markdown}
+Ill-defined operations will raise an error, such as a division by zero.
+:::
+
+```{python}
+#| error: true
+#| output: asis
+#| colab: {base_uri: 'https://localhost:8080/', height: 167}
+wrong_comp = 14 / 0
+```
+
+::: {.cell .markdown}
+The "stop signal" on the left of the cell signals that the execution of this Python block has failed.
+
+The error message provides you with (hopefully) useful information to know what went wrong.
+If you do not know what the error means, or how to fix it, click on the "Search stack overflow" button and read from the suggested webpages.
+:::
+
+::: {.cell .markdown}
+**Exercise.** Add code cells and try out each of the remaining arithmetic operations, with various values.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+
+```{python}
+7 * 2
+```
+
+```{python}
+14 / 2
+```
+
+```{python}
+14 // 2
+```
+
+```{python}
+15 / 2
+```
+
+```{python}
+15 // 2
+```
+
+```{python}
+# etc.
+```
+
+:::
+
+::: {.cell .markdown}
+### Functions
+
+To improve code readability, it is common to separate the code into different blocks, responsible for performing precise actions: **functions**.
+
+A function takes some **inputs** (or *arguments*) and processes them to return some **outputs** (or *results*).
+:::
+
+::: {.cell .markdown}
+Visually, a function definition is a block of lines that:
+- begins with a line starting with the keyword `def`,
+- includes all subsequent lines **indented** at least one more level than `def` (ie. vertically aligned at least one `<TAB>`, or two regular whitespaces, further to the right than `def`),
+- ends as soon as we encounter a line at the same level of indentation as `def`.
+:::
+
+::: {.cell .markdown}
+*Nota Bene*: The Python language relies on indentation (vertical alignment) to define the precise scope of not only functions, but also various constructs that you will discover shortly.
+:::
+
+::: {.cell .markdown}
+For instance, let us define a function `square` that, for an input `x`, computes and returns as output `x ** 2`.
+:::
+
+```{python}
+def square(x):
+  return x ** 2
+```
+
+::: {.cell .markdown}
+The first line relies on three concepts :
+
+* The reserved keyword `def` signals a function definition ;
+* This function is named `square` ;
+* It expects one or more arguments listed between parentheses, here a unique argument that we name `x`, we will use this name `x` to refer to the argument value in the body of the function.
+
+This first line ends with a colon `:` that separates the signature of the function (function name and list of arguments) from the body of the function (the sequence of instructions that describe the computation that this function does).
+:::
+
+::: {.cell .markdown}
+Syntactically, the body of a function is defined as the sequence of lines that are **indented** at least one level (one `<TAB>`, or two regular whitespaces) further to the right.
+Here, the body of the function is a single line `return x ** 2`, but most functions perform more complex operations hence are longer than that.
+:::
+
+::: {.cell .markdown}
+The second line uses two concepts :
+
+* The reserved keyword `return` signals that what comes next on this line will be the value output by the function ;
+* The returned (output) value is defined as the result of the arithmetic operation `x ** 2`.
+:::
+
+::: {.cell .markdown}
+Any line in the body after `return` will not be executed, because `return` triggers an output and the exit of the function.
+:::
+
+::: {.cell .markdown}
+We can apply the `square` function to a number :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+square(4)
+```
+
+::: {.cell .markdown}
+Functions can have more than one argument.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+def multiply(a, b):
+  return a * b
+
+multiply(3, 5)
+```
+
+::: {.cell .markdown}
+In the cell above :
+
+* the function `multiply` is defined that expects two arguments named `a` and `b`, and returns the result of their multiplication ;
+* after the function is defined, we apply it to the pair of values `3` and `5`.
+
+But how does the Python interpreter know that the function body ends after `return a * b`, and does not include `multiply(3, 5)` ?
+:::
+
+::: {.cell .markdown}
+If you edit the cell, remove the empty line and re-run the cell, you will see that the behavior is the same as before.
+You can try it and see for yourself.
+:::
+
+::: {.cell .markdown}
+This unchanged behavior with and without the empty line means that the empty line does not mark the end of a function body.
+
+Another possibility could be that `multiply(3, 5)` is not indented at the same level as the `return a * b` line, but rather is indented at the same level as the `def` keyword that starts the function definition.
+
+Indeed, the uninterrupted sequence of instructions whose start is indented further to the right than the `def` line, makes up the function body.
+
+Starting a line at the same indentation level as the `def` line marks the end of the function body.
+:::
+
+::: {.cell .markdown}
+Functions can be composed : A function can be applied to the output of another function.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+# Functions can be composed.
+square(multiply(3, 2))
+```
+
+::: {.cell .markdown}
+To improve code readability, it is sometimes useful to explicitly name the arguments.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+square(multiply(a=3, b=2))
+```
+
+::: {.cell .markdown}
+Naming the arguments also provides flexibility, because you can use these names when you call the function and avoid having to remember the order in which the arguments were stated in the function definition.
+:::
+
+::: {.cell .markdown}
+**Exercise.** Write a `divide(a, b)` function. Compare the results returned by `divide(15, 3)`, `divide(3, 15)`, `divide(a=15, b=3)`, `divide(b=3, a=15)`.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+
+```{python}
+def divide(a, b):
+    return a / b
+```
+
+```{python}
+divide(15, 3)
+```
+
+```{python}
+divide(3, 15)
+```
+
+```{python}
+divide(a=15, b=3)
+```
+
+```{python}
+divide(b=3, a=15)
+```
+:::
+
+::: {.cell .markdown}
+### Lists
+
+A fundamental capacity in programming is to operate not only on simple values, but also on collections of values (or more complex objects).
+
+Python provides several data structures to hold such collections, the simplest being the list.
+
+Lists are a container type for ordered sequences of elements.
+:::
+
+::: {.cell .markdown}
+Lists can be initialized empty
+:::
+
+```{python}
+my_list = []
+```
+
+::: {.cell .markdown}
+or with some initial elements
+:::
+
+```{python}
+my_list = [1, 2, 3]
+```
+
+::: {.cell .markdown}
+Lists have a dynamic size : elements can be added, *appended*, to them (at the end).
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+my_list.append(4)
+my_list
+```
+
+::: {.cell .markdown}
+We just used a new syntax here, which is the *dot notation* : on the variable `my_list`, we applied an operation, [append](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists), with the value `4` as its argument.
+
+`append` is a *method* of list objects, ie. a function that is attached to every list.
+
+Here, calling `.append(4)` on `my_list` had the effect of modifying `my_list` by adding a new element, 4, at its end.
+:::
+
+::: {.cell .markdown}
+We can access individual elements of a list with their position or *index*.
+Note that in Python, **indexing starts from 0**.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+# access element at index 0 (hence the 1st value in the list)
+my_list[0]
+```
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+# access element at index 3 (hence the 4th value in the list)
+my_list[3]
+```
+
+::: {.cell .markdown}
+We can access "slices" of a list using `my_list[i:j]` where `i` is the start of the slice (again, indexing starts from 0) and `j` the end of the slice.
+
+In the slice notation :
+
+* the start index is *included* ;
+* the end index is *excluded*.
+
+For instance, to get elements from position 1 (included) to 3 (excluded), ie. elements at positions 1 and 2 :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+my_list[1:3]
+```
+
+::: {.cell .markdown}
+Omitting the second index means that the slice shoud run until the end of the list.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+my_list[1:]
+```
+
+::: {.cell .markdown}
+We can check if an element is in the list using (the binary operator) `in`.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+5 in my_list
+```
+
+::: {.cell .markdown}
+The length of a list can be obtained using the `len` function.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+len(my_list)
+```
+
+::: {.cell .markdown}
+**Exercise.** Add a Code cell and define a list of strings 'a', 'b', 'c', 'd', 'e'. Select the slice from position 2 (included) to position 5 (excluded). Then select the slice from position 0 (included) to 3 (excluded).
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+
+```{python}
+some_list = ['a', 'b', 'c', 'd', 'e']
+some_list[2:5]
+```
+
+```{python}
+some_list[0:3]
+```
+:::
+
+::: {.cell .markdown}
+### Strings
+
+Computers can manipulate not only numeric values, but also text values.
+
+Text values are stored in *strings*.
+In Python, strings are enclosed in single quotes `'` or double quotes `"`.
+:::
+
+```{python}
+string1 = "some text"
+string2 = 'some other text'
+```
+
+::: {.cell .markdown}
+Strings behave similarly to lists.
+As such we can access individual elements in exactly the same way, by specifiying their index.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/', height: 35}
+string1[3]
+```
+
+::: {.cell .markdown}
+and similarly, we can take a slice of a string
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/', height: 35}
+string2[5:]
+```
+
+::: {.cell .markdown}
+String concatenation is performed using the `+` operator.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/', height: 35}
+string1 + " " + string2
+```
+
+::: {.cell .markdown}
+### Conditionals
+
+As their name indicates, conditionals are a way to execute code depending on whether a condition is `True` or `False`.
+
+As in other languages, Python supports `if` and `else` but `else if` is contracted into `elif`, as the example below demonstrates.
+
+We will use the `print()` function to print a message below the code cell at execution.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+my_variable = 5
+if my_variable < 0:
+  print("negative")
+elif my_variable == 0:
+  print("null")
+else: # my_variable > 0
+  print("positive")
+```
+
+::: {.cell .markdown}
+Here `<` and `>` are the strict "less than" and "greater than" operators, while `==` is the equality operator (not to be confused with `=`, the variable assignment operator).
+
+The operators `<=` and `>=` can be used for "less than or equal" and "greater than or equal" comparisons.
+:::
+
+::: {.cell .markdown}
+**Nota Bene**: The `print` function used here merely displays the given text in the notebook, below the code cell.
+This is very different from the `return` statement used to output a value in a function.
+The value returned by a function can be stored in a variable, passed to another function and so on, whereas the only use of printed text is that you can read it on the screen.
+:::
+
+::: {.cell .markdown}
+**Reminder**: Contrary to other languages, blocks of code are delimited using indentation.
+Here, we use 2-space indentation but many programmers also use 4-space indentation.
+Any one is fine as long as you are consistent throughout your code.
+:::
+
+::: {.cell .markdown}
+### Loops
+
+Loops are a way to execute a block of code multiple times.
+There are two main types of loops: `for` loops and `while` loops.
+
+- `for` loops are simple to use. You will need to use `for` loops in these notebooks, and in your future projects, therefore it is important for you to understand this construct.
+
+- `while` loops are more flexible and enable to perform more complex processing, more also more error-prone. You might encounter `while` loops in the future, perhaps even need to write `while` loops yourself, so it is important that you know they exist. No need to panic if you do not get them immediately though !
+:::
+
+::: {.cell .markdown}
+#### For loops
+A `for` loop is executed once for each element in a sequence.
+
+A `for` loop is very convenient if your goal is simply to **iterate over each element in a list**, one after the other, and do something with it.
+
+For instance, if we want to print each element in `my_list`, from the first to the last :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+for element in my_list:
+  print(element)
+```
+
+::: {.cell .markdown}
+Because a `for` loop can be used to iterate over any list, you can also use it to retrieve elements by their **indices**.
+For instance, if you want to print the elements at indices 0, 1 and 3 in `my_list`, you can write :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+for i in [0, 1, 3]:
+  print(my_list[i])
+```
+
+::: {.cell .markdown}
+**Convention.** It helps to use variable names that clearly convey what is being manipulated. In the above cells, I used two variable names in my `for` loops:
+
+* `element` to iterate over the *elements* of a list,
+* `i` to iterate over the *indices* (positions) in a list.
+
+These naming conventions aim at conveying the nature of iteration variable and its intended use.
+
+You can use different names in your own loops, though, as long as these names help you (or eventual readers of your code) understand the nature and possible uses of the content of these variables.
+:::
+
+::: {.cell .markdown}
+What if we want to iterate over a consecutive range of positions, let us say print the first 10 elements of a long list such as this one :
+:::
+
+```{python}
+my_big_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+               'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+               'u', 'v', 'w', 'x', 'y', 'z']
+```
+
+::: {.cell .markdown}
+The long, tedious version would be :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
+  print(my_big_list[i])
+```
+
+::: {.cell .markdown}
+A more concise way would be to generate the sequence of consecutive numbers from 0 (included) to 10 (excluded), corresponding to the first 10 indices (positions) of the elements in the list, with the [range](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function) function.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+for i in range(0, 10):
+  print(my_big_list[i])
+```
+
+::: {.cell .markdown}
+Read the documentation for `range` in the above link if you want to know more about the various ways `range` can be called.
+:::
+
+::: {.cell .markdown}
+### Combining notions (optional)
+
+We saw earlier that the `len()` function returns the length of a list, which is an integer :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+len(my_list)
+```
+
+::: {.cell .markdown}
+An alternative way to iterate over a list, rather than iterating over elements directly, is to iterate over each position (*index*) `i` in the list from 0 (included) to the length of the list (excluded), retrieve the element at position `i` and print it :
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+for i in range(len(my_list)):
+  print(my_list[i])
+```
+
+::: {.cell .markdown}
+**Exercise.** Write two equivalent `for` loops whose effect is to print each element in `my_big_list` using :
+(a) an iteration over elements,
+(b) an iteration over indices.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+
+```{python}
+# (a) iteration over elements
+for element in my_big_list:
+    print(element)
+```
+
+```{python}
+# (b) iteration over indices
+for i in range(len(my_big_list)):
+    print(my_big_list[i])
+```
+:::
+
+::: {.cell .markdown}
+#### While loops
+
+A `while` loop goes on as long as its condition is True.
+
+The condition of a `while` loop can be any expression that can be evaluated to either `True` or `False`.
+You need to make sure that this expression is initially `True` (otherwise the loop will never be executed), but eventually becomes `False` (otherwise the loop will never stop and it will run forever).
+:::
+
+::: {.cell .markdown}
+We can use a `while` loop to do the same thing we did earlier, that is iterating over each index in a list to retrieve the element at that index and print it.
+
+But we need to do more work ourselves :
+
+* before the `while` operator, we need to declare the `i` variable ourselves and set it to its initial value (0) ;
+* at the end of each iteration, we need to increase the value of `i` by 1 so that the next iteration will retrieve the next element.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+i = 0
+while i < len(my_list):
+  print(my_list[i])
+  i += 1 # equivalent to i = i + 1
+```
+
+::: {.cell .markdown}
+Before the loop, `i` is set to 0.
+
+Then as long as `i` is smaller than the length of the list, we print the element at position `i`, then increase `i` by 1.
+
+At the next iteration, if `i` is still smaller than the length of the list, the same thing happens, otherwise (if `i` is greater than or equal to the length of the list) the body of the loop is not executed.
+:::
+
+::: {.cell .markdown}
+### Dictionaries
+
+Dictionaries enable to store key - value pairs, or mappings.
+
+For instance, we can map the numbers of the [Departments of France](https://en.wikipedia.org/wiki/Departments_of_France) to their names.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+fr_deps = {
+    '13': 'Bouches-du-Rhône',
+    '75': 'Paris',
+}
+
+fr_deps
+```
+
+::: {.cell .markdown}
+A dictionary enables you to provide a key, between square brackets, and retrieve the value associated to this key.
+:::
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/', height: 35}
+fr_deps['13']
+```
+
+::: {.cell .markdown}
+If you already have a dictionary, but want to add a new key - value pair, you can use an assignment similar to that for values but with the square brackets notation :
+:::
+
+```{python}
+fr_deps['59'] = 'Nord'
+```
+
+::: {.cell .markdown}
+If the key does not exist in the dictionary, the key - value pair is added ; If the key already exists in the dictionary, the associated value is replaced with the new one.
+:::
+
+::: {.cell .markdown}
+### Exercises
+
+**Exercise 1.** Write a function `relu` that, given a number `x`:
+- if `x` is greater than or equal to 0, returns `x`,
+- otherwise (ie. if `x` is negative) returns `0`.
+:::
+
+::: {.cell .markdown}
+> **HINT** Use a conditional.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+
+```{python}
+def relu(x):
+    if x >= 0:
+        return x
+    else:
+        return 0
+```
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+relu(-3)  # should be 0
+```
+
+```{python}
+#| colab: {base_uri: 'https://localhost:8080/'}
+relu(31)  # should be 31
+```
+:::
+
+::: {.cell .markdown}
+This function could be used to compute corporate tax in simplistic software, where one assumes the taxable income of a company to be its net profit, unless the company had losses in which case its taxable income amounts to 0.
+
+As a matter of fact, this function is widely used to model phenomena in various domains.
+:::
+
+::: {.cell .markdown}
+You might encounter it later in the semester when you use neural networks to uncover biases in AI systems, under the name [Rectifier or Rectified Linear Unit (ReLU) activation function](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)).
+
+Formally, it is defined by the following formula:
+
+$\text{relu}(x) = \left\{
+   \begin{array}{rl}
+     x, & \text{if }  x \ge 0 \\
+     0, & \text{otherwise }.
+   \end{array}\right.$
+
+The notation might scare you at first, but it is a mere notation for the function you just wrote.
+:::
+
+::: {.cell .markdown}
+Congratulations, you wrote one of the basic building blocks of neural networks !
+:::
+
+::: {.cell .markdown}
+**Exercise 2.** Using a foor loop, write a function that computes the [average](https://en.wikipedia.org/wiki/Average) of a list of values.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+```{python}
+def average(vector):
+  sum_elts = 0
+  for element in vector:
+    sum_elts = sum_elts + element  # or result += element
+  return sum_elts / len(vector)
+
+my_vector = [12, 11, 9, 5, 7]
+# the result should be 8.8
+average(my_vector)
+```
+:::
+
+::: {.cell .markdown}
+**Exercise 3.** Using a for loop and a conditional, write a function that returns the maximum value in a vector.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+```{python}
+def vector_maximum(vector):
+  max_elts = vector[0]  # initialize the max to the first element
+  for element in vector[1:]:  # for every other element
+    if element > max_elts:  # if it is greater than the current max
+      max_elts = element  # this element becomes the current max
+  return max_elts  # once we looked at every element, return the current max
+```
+
+```{python}
+# the result should be 8
+vector_maximum([1, -2, 8, 4, -1])
+```
+:::
+
+::: {.cell .markdown}
+**Bonus exercise.** If you still have time, write a function that sorts a list in ascending order (from smaller to bigger) using the [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) algorithm.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+```{python}
+def insertion_sort(my_list):
+  # strict translation of the pseudocode in the wikipedia page
+  i = 1
+  while i < len(my_list):
+    j = i
+    while j > 0 and my_list[j-1] > my_list[j]:
+      # swap my_list[j-1] and my_list[j]
+      x = my_list[j-1]
+      my_list[j-1] = my_list[j]
+      my_list[j] = x
+      # end of swap
+      j = j - 1  # or j -= 1
+    # end of while (inner loop)
+    i = i + 1  # or i += 1
+  # end of while (outer loop)
+  return my_list
+
+my_list = [1, -3, 3, 2]
+# Should return [-3, 1, 2, 3]
+insertion_sort(my_list)
+```
+:::
+
+::: {.cell .markdown}
+The outer loop goes over all indices from 1 to the length of the list. This is a case where a for loop is more explicit and feels more natural in Python.
+:::
+
+::: {.content-visible when-profile="answers"}
+
+::: {.cell .markdown}
+**Solutions.**
+:::
+```{python}
+# alternative: more Python-esque version
+def insertion_sort_alt(my_list):
+  for i in range(1, len(my_list)):
+    j = i
+    while j > 0 and my_list[j-1] > my_list[j]:
+      # swap my_list[j-1] and my_list[j]
+      x = my_list[j-1]
+      my_list[j-1] = my_list[j]
+      my_list[j] = x
+      # end of swap
+      j = j - 1  # or j -= 1
+    # end of while (inner loop)
+  # end of for (outer loop)
+  return my_list
+
+my_list = [1, -3, 3, 2]
+# Should return [-3, 1, 2, 3]
+insertion_sort_alt(my_list)
+```
+:::
+
+::: {.cell .markdown}
+Insertion sort is a simple sorting algorithm. Other sorting algorithms operate differently, eg. [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [quicksort](https://en.wikipedia.org/wiki/Quicksort). Sorting algorithms arrive at the same result (a sorted list) by following different logics, which will perform differently in the best, average or worst case scenarios.
+:::
+
+::: {.cell .markdown}
+### Going further
+
+We covered some essential of the Python programming language, but it has many more features.
+
+If or when you have time, you can check out these resources :
+
+* [Ultimate Python study guide](https://github.com/huangsam/ultimate-python)
+* List of Python [tutorials](https://wiki.python.org/moin/BeginnersGuide/Programmers)
+* Four-hour [course](https://www.youtube.com/watch?v=rfscVS0vtbw) on Youtube (you can skip the parts on PyCharm, files etc. if you only work on Colaboratory)
+* [Automate the Boring Stuff with Python - Practical Programming for Total Beginners]((https://automatetheboringstuff.com/)) by Al Sweigart is Sylvain's (and many others') favorite. It is "written for office workers, students, administrators, and anyone who uses a computer to learn how to code small, practical programs to automate tasks on their computer."
+The entire content of the book is available on its website, scroll down to the "Table of contents" and you will see links to each chapter.
+:::
